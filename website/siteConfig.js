@@ -23,7 +23,7 @@ const users = [
 const siteConfig = {
   title: 'nOS Documentation' /* title for your website */,
   tagline: 'nOS Documentation',
-  url: 'https://your-docusaurus-test-site.com' /* your website url */,
+  url: 'https://docs.nos.io' /* your website url */,
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -39,8 +39,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'intro', label: 'Documentation'},
-    {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
+    {page: 'help', label: 'Help'}
   ],
 
   // If you have users set above, you add it here:
