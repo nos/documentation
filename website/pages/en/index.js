@@ -19,8 +19,6 @@ function imgUrl(img) {
 }
 
 function docUrl(doc, language) {
-  console.log(doc);
-  console.log(siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc);
   return siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
 }
 
