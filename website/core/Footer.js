@@ -48,30 +48,24 @@ class Footer extends React.Component {
           <div>
             <h5>Community</h5>
             <a href="https://discordapp.com/invite/eGFAskm">Discord Chat</a>
-
-
-
             <a
               href="https://t.me/nOSplatform"
               target="_blank"
               rel="noreferrer noopener">
               Telegram
             </a>
-
             <a
               href="https://t.me/nOSAnnouncements"
               target="_blank"
               rel="noreferrer noopener">
               Telegram Announcements
             </a>
-
             <a
               href="https://twitter.com/nOSplatform"
               target="_blank"
               rel="noreferrer noopener">
               Twitter
             </a>
-
             <a
               href="https://www.reddit.com/r/nOSplatform"
               target="_blank"
@@ -81,17 +75,17 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
-            <a href={this.props.config.baseUrl + 'blog'}>Blog</a>
+            <a href={`https://medium.com/nos-io`} target="_blank">Blog</a>
             <a href="https://github.com/nos">GitHub</a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
+              data-count-href="/nos/client/stargazers"
               data-show-count={true}
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub">
-              Star
+              Star nOS
             </a>
           </div>
         </section>

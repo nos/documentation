@@ -39,7 +39,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'intro', label: 'Documentation'},
-    {blog: true, label: 'Blog'},
+    // {blog: true, label: 'Blog'},
+    {href: "https://medium.com/nos-io", label: "Blog"},
     {page: 'help', label: 'Help'}
   ],
 

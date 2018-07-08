@@ -81,7 +81,7 @@ class HomeSplash extends React.Component {
           <ProjectTitle />
           <PromoSection>
             <Button href={docUrl('intro.html', language)}>Documentation</Button>
-            <Button href="/blog">Blog</Button>
+            <Button href="https://medium.com/nos-io" target="_blank">Blog</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -92,6 +92,7 @@ class HomeSplash extends React.Component {
 const Display = props => (
   <div className="productShowcaseSection">
   <img src={imgUrl('screenshot.png')} alt="client" title="client" 
+    style={{ boxShadow: "20px 20px 50px grey" }}
     width={800}
     width={800}
   />
