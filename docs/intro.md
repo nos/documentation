@@ -1,20 +1,22 @@
 ---
 id: intro
-title: Introduction
-sidebar_label: Introduction
+title: Welcome to the nOS community!
+sidebar_label: Welcome to nOS!
 ---
 
-Welcome to the nOS community! We're always looking for more contributors and are happy to have you.
+ We're always looking for more developers/contributors and are happy to have you.
+Therefor a big thank you for being here! We really appreciate you taking the time for reading our documentation and guidelines!
 
-Therefor a big thank you for being here! We really appreciate you taking the time for reading our documentation!
+Hope you enjoy your stay :) Some useful resources are listed below.
 
-## Resources:
+See you on the other side!
 
-- [API Documentation](./api.md)
-- [Create your own dApp](./create-your-own-dapp.md)
-- [Setup nos-local](./nos-local.md)
+##### Documentation
+- [nOS Client](./nos-client/getting-started.html)
+- [Create nOS dApp](./create-nos-dapp/installation-usage.html)
+- [nOS Local](./nos-local/installation-usage.html)
 
-
-// TODO fix urls
+##### Articles
+- [Create your first dApp](../blog/2018/07/08/create-your-first-nos-dapp.html)
 
 ---
