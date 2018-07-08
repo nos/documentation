@@ -3,7 +3,6 @@ This is the official repository for all documentation regarding the **nOS Client
 
 
 ## Contributing to the documentation
----
 #### Updating existing documentation
 This can be achieved by just editing the *.md files under the `/docs` folder
 
