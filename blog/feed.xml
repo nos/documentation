@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>nOS Documentation Blog</title>
+        <link>https://docs.nos.io/blog</link>
+        <description>The best place to stay up-to-date with the latest nOS Documentation news and events.</description>
+        <lastBuildDate>Sun, 08 Jul 2018 06:00:00 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>nOS Documentation Blog</title>
+            <url>https://docs.nos.io/img/logo.svg</url>
+            <link>https://docs.nos.io/blog</link>
+        </image>
+        <copyright>Copyright © 2018 nOS</copyright>
+        <item>
+            <title><![CDATA[Create your first nOS dApp]]></title>
+            <link>https://docs.nos.io/blog/2018/07/08/create-your-first-nos-dapp.html</link>
+            <guid>https://docs.nos.io/blog/2018/07/08/create-your-first-nos-dapp.html</guid>
+            <pubDate>Sun, 08 Jul 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Always wondered how to get started creating your first ever dApp on nOS?
+This article is the way-to-go with a zero to 100 walkthrough on how to create one!</p>
+]]></description>
+        </item>
+    </channel>
+</rss>

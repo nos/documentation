@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://docs.nos.io/help.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/en/help.html" /> </url>
+<url> <loc>https://docs.nos.io/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/en/index.html" /> </url>
+<url> <loc>https://docs.nos.io/blog/2018/07/08/create-your-first-nos-dapp.html</loc> <changefreq>weekly</changefreq> <priority>0.3</priority> </url>
+<url> <loc>https://docs.nos.io/docs/contributing.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/contributing.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/create-nos-dapp/installation-usage.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/create-nos-dapp/installation-usage.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/create-nos-dapp/react.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/create-nos-dapp/react.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/intro.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/intro.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/nos-client/api.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/api.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/nos-client/future.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/future.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/nos-client/getting-started.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/getting-started.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/nos-client/implementation-example.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/implementation-example.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/nos-local/faq.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-local/faq.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/nos-local/installation-usage.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-local/installation-usage.html" /> </url>
+</urlset>

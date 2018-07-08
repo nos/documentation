@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Implementation example · nOS Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="This is an example of a service layer in your frontend application which implements all"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Implementation example · nOS Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.nos.io/index.html"/><meta property="og:description" content="This is an example of a service layer in your frontend application which implements all"/><meta property="og:image" content="https://docs.nos.io/img/logo.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.nos.io/img/logo.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://docs.nos.io/blog/atom.xml" title="nOS Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://docs.nos.io/blog/feed.xml" title="nOS Documentation Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.svg" alt="nOS Documentation"/><h2 class="headerTitleWithLogo">nOS Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/intro.html" target="_self">Documentation</a></li><li class=""><a href="/blog" target="_self">Blog</a></li><li class=""><a href="/en/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>nOS Client</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul><li class="navListItem"><a class="navItem" href="/docs/intro.html">Welcome to nOS!</a></li><li class="navListItem"><a class="navItem" href="/docs/contributing.html">Contributing</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">nOS Client</h3><ul><li class="navListItem"><a class="navItem" href="/docs/nos-client/getting-started.html">Getting started</a></li><li class="navListItem"><a class="navItem" href="/docs/nos-client/api.html">API Overview</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/nos-client/implementation-example.html">Implementation example</a></li><li class="navListItem"><a class="navItem" href="/docs/nos-client/future.html">Future</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Create nOS dApp</h3><ul><li class="navListItem"><a class="navItem" href="/docs/create-nos-dapp/installation-usage.html">Installation and Usage</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">nOS Local</h3><ul><li class="navListItem"><a class="navItem" href="/docs/nos-local/installation-usage.html">Installation and usage</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Implementation example</h1></header><article><div><span><p>This is an example of a service layer in your frontend application which implements all
+functionalities of nOS.</p>
+<pre><code class="hljs css languages- javascript"><span class="hljs-keyword">const</span> nos = <span class="hljs-built_in">window</span>.NOS.V1;
+
+<span class="hljs-keyword">const</span> NEO = <span class="hljs-string">'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b'</span>;
+<span class="hljs-keyword">const</span> GAS = <span class="hljs-string">'602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7'</span>;
+<span class="hljs-keyword">const</span> RPX = <span class="hljs-string">'ecc6b20d3ccac1ee9ef109af5a7cdb85706b1df9'</span>;
+
+<span class="hljs-keyword">const</span> scriptHash = <span class="hljs-string">'2f228c37687d474d0a65d7d82d4ebf8a24a3fcbc'</span>;
+<span class="hljs-keyword">const</span> operation = <span class="hljs-string">'9937f74e-1edc-40ae-96ad-1120166eab1b'</span>;
+<span class="hljs-keyword">const</span> args = [<span class="hljs-string">'ef68bcda-2892-491a-a7e6-9c4cb1a11732'</span>];
+
+nos.getAddress()
+  .then(<span class="hljs-function">(<span class="hljs-params">address</span>) =&gt;</span> alert(<span class="hljs-string">`Address: <span class="hljs-subst">${address}</span>`</span>))
+  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+
+
+nos.getBalance({ <span class="hljs-attr">asset</span>: NEO })
+  .then(<span class="hljs-function">(<span class="hljs-params">balance</span>) =&gt;</span> alert(<span class="hljs-string">`Balance: <span class="hljs-subst">${balance}</span>`</span>))
+  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+
+
+nos.getBalance({ <span class="hljs-attr">asset</span>: NEO, <span class="hljs-attr">address</span>: <span class="hljs-string">'AZPkgTJixxkSFPyBZrcVpLj9nsHsPDUVkF'</span> })
+  .then(<span class="hljs-function">(<span class="hljs-params">balance</span>) =&gt;</span> alert(<span class="hljs-string">`Balance: <span class="hljs-subst">${balance}</span>`</span>))
+  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+
+
+nos.invoke({ scriptHash, operation, args })
+  .then(<span class="hljs-function">(<span class="hljs-params">txid</span>) =&gt;</span> alert(<span class="hljs-string">`Invoke txid: <span class="hljs-subst">${txid}</span> `</span>))
+  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+
+
+nos.testInvoke({ scriptHash, operation, args })
+  .then(<span class="hljs-function">(<span class="hljs-params">script</span>) =&gt;</span> alert(<span class="hljs-string">`Test invoke script: <span class="hljs-subst">${script}</span> `</span>))
+  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+
+
+<span class="hljs-keyword">const</span> scriptHash = <span class="hljs-string">'85e9cc1f18fcebf9eb8211a128807e38d094542a'</span>;
+<span class="hljs-keyword">const</span> key = <span class="hljs-string">'post.latest'</span>;
+nos.getStorage({ scriptHash, key })
+  .then(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> alert(<span class="hljs-string">`Get storage data: <span class="hljs-subst">${data}</span> `</span>))
+  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+
+
+<span class="hljs-keyword">const</span> asset = GAS;
+<span class="hljs-keyword">const</span> amount = <span class="hljs-string">'1'</span>;
+<span class="hljs-keyword">const</span> receiver = <span class="hljs-string">'AMh8o3uv5PwdryBsiZPd5zoVBDVaredZLG'</span>;
+nos.send({ asset, amount, receiver })
+  .then(<span class="hljs-function">(<span class="hljs-params">txId</span>) =&gt;</span> alert(<span class="hljs-string">`<span class="hljs-subst">${amount}</span> <span class="hljs-subst">${asset}</span> sent: <span class="hljs-subst">${txId}</span> `</span>))
+  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+
+
+nos.claimGas()
+  .then(<span class="hljs-function">(<span class="hljs-params">txId</span>) =&gt;</span> alert(<span class="hljs-string">`Gas claimed <span class="hljs-subst">${txId}</span>`</span>))
+  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+</code></pre>
+<hr>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/nos-client/api.html">← API Overview</a><a class="docs-next button" href="/docs/nos-client/future.html">Future →</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/en/intro.html" class="nav-home"><img src="/img/logo.svg" alt="nOS Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/nos-client/getting-started.html">nOS Client documentation</a><a href="/docs/create-nos-dapp/installation-usage.html">Create nOS dApp documentation</a><a href="/docs/nos-local/installation-usage.html">nOS Local documentation</a></div><div><h5>Community</h5><a href="https://discordapp.com/invite/eGFAskm">Discord Chat</a><a href="https://t.me/nOSplatform" target="_blank" rel="noreferrer noopener">Telegram</a><a href="https://t.me/nOSAnnouncements" target="_blank" rel="noreferrer noopener">Telegram Announcements</a><a href="https://twitter.com/nOSplatform" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.reddit.com/r/nOSplatform" target="_blank" rel="noreferrer noopener">Reddit</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/nos">GitHub</a><a class="github-button" href="https://github.com/nos/client" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2018 nOS</section></footer></div></body></html>
