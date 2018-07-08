@@ -1,0 +1,20 @@
+{
+  "docs": {
+    "Introduction": ["introduction"],
+    "test": ["test"],
+    "nOS Client": [
+      "nos-client/getting-started",
+      "nos-client/api",
+      "nos-client/implementation-example",
+      "nos-client/future",
+      "nos-client/contributing"
+    ],
+    "Create nOS dApp": [
+      "create-nos-dapp/installation-usage",
+      "create-nos-dapp/react"
+    ],
+    "nOS Local": [
+      "nos-local/installation-usage"
+    ]
+  }
+}
