@@ -1,6 +1,7 @@
 # documentation
 This is the official repository for all documentation regarding the **nOS Client**, **nOS-Local** and **Create-nOS-dApp**.
 
+&nbsp;
 
 ## Contributing to the documentation
 #### Updating existing documentation
