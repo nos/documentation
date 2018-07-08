@@ -19,6 +19,8 @@ function imgUrl(img) {
 }
 
 function docUrl(doc, language) {
+  console.log(doc);
+  console.log(siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc);
   return siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
 }
 
@@ -52,7 +54,7 @@ const SplashContainer = props => (
 
 const Logo = props => (
   <div className="projectLogo">
-    <img src={props.img_src} href={docUrl('introduction.html', props.language)} />
+    <img src={props.img_src} href={docUrl('intro.html', props.language)} />
   </div>
 );
 
@@ -80,7 +82,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href={docUrl('introduction.html', language)}>Documentation</Button>
+            <Button href={docUrl('intro.html', language)}>Documentation</Button>
             <Button href="/blog">Blog</Button>
           </PromoSection>
         </div>
@@ -91,7 +93,7 @@ class HomeSplash extends React.Component {
 
 const Display = props => (
   <div className="productShowcaseSection">
-  <img src={siteConfig.clientImgage} alt={`kek`} title={`kek`} 
+  <img src={imgUrl('screenshot.png')} alt="client" title="client" 
     width={800}
     width={800}
   />

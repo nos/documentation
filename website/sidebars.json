@@ -1,7 +1,6 @@
 {
   "docs": {
-    "Introduction": ["introduction"],
-    "test": ["test"],
+    "Introduction": ["intro"],
     "nOS Client": [
       "nos-client/getting-started",
       "nos-client/api",

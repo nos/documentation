@@ -1,7 +1,7 @@
 ---
-id: introduction
-title: test
-sidebar_label: test
+id: intro
+title: Introduction
+sidebar_label: Introduction
 ---
 
 ## Resources:
