@@ -1,6 +1,6 @@
 ---
 id: installation-usage
-title: Installation and Usage
+title: Getting started with create-nos-dapp
 sidebar_label: Installation and Usage
 ---
 

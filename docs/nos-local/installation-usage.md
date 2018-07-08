@@ -1,7 +1,7 @@
 ---
 id: installation-usage
 title: Getting started with nOS Local
-sidebar_label: Getting started with nOS Local
+sidebar_label: Installation and usage
 ---
 
 An environment for nOS development.

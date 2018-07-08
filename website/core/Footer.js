@@ -35,33 +35,48 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <a href={this.docUrl('nos-client/getting-started.html','')}>
+              nOS Client documentation
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href={this.docUrl('create-nos-dapp/installation-usage.html', '')}>
+              Create nOS dApp documentation
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.docUrl('nos-local/installation-usage.html', '')}>
+              nOS Local documentation
             </a>
           </div>
           <div>
             <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
-            </a>
+            <a href="https://discordapp.com/invite/eGFAskm">Discord Chat</a>
+
+
+
             <a
-              href="http://stackoverflow.com/questions/tagged/"
+              href="https://t.me/nOSplatform"
               target="_blank"
               rel="noreferrer noopener">
-              Stack Overflow
+              Telegram
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
+
             <a
-              href="https://twitter.com/"
+              href="https://t.me/nOSAnnouncements"
+              target="_blank"
+              rel="noreferrer noopener">
+              Telegram Announcements
+            </a>
+
+            <a
+              href="https://twitter.com/nOSplatform"
               target="_blank"
               rel="noreferrer noopener">
               Twitter
+            </a>
+
+            <a
+              href="https://www.reddit.com/r/nOSplatform"
+              target="_blank"
+              rel="noreferrer noopener">
+              Reddit
             </a>
           </div>
           <div>
