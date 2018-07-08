@@ -63,3 +63,5 @@ nos.claimGas()
   .then((txId) => alert(`Gas claimed ${txId}`))
   .catch((err) => alert(`Error: ${err.message}`));
 ```
+
+---

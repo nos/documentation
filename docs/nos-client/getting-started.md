@@ -11,11 +11,4 @@ build a simple web app that can interact with a set of simple API functions expo
 client.  These API functions provide a simple mechanism for performing actions on behalf of the
 account if the user chooses to provide access.
 
-
-
-### React
-
-
-
-
-### Javascript
+---

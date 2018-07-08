@@ -16,6 +16,7 @@ user rejects the action.
 
 
 ## `getAddress`
+---
 The `getAddress` function provides the address of the currently authenticated account.  It does not
 require the user to grant permission.
 
@@ -35,11 +36,12 @@ nos.getAddress()
 ```
 
 
----
+
 &nbsp;
 
 
 ## `getBalance`
+---
 The `getBalance` function provides the balance of a certain address for a
 specified asset or NEP5 token.  It does not require the user to grant permission.
 
@@ -70,11 +72,11 @@ nos.getBalance({ asset: NEO, address })
 ```
 
 
----
 &nbsp;
 
 
 ## `claimGas`
+---
 The `claimGas` function claims any unclaimed GAS on behalf of the currently authenticated account.
 It requires the user to grant permission.
 
@@ -94,11 +96,11 @@ nos.claimGas()
 ```
 
 
----
 &nbsp;
 
 
 ## `testInvoke`
+---
 The `testInvoke` function executes a test invocation transaction on behalf of the currently
 authenticated account.  It does not require the user to grant permission.
 
@@ -129,11 +131,11 @@ nos.testInvoke({ scriptHash, operation, args })
 ```
 
 
----
 &nbsp;
 
 
 ## `invoke`
+---
 The `invoke` function executes an invocation transaction on behalf of the currently authenticated
 account.  It requires the user to grant permission.
 
@@ -163,11 +165,11 @@ nos.invoke({ scriptHash, operation, args })
 ```
 
 
----
 &nbsp;
 
 
 ## `getStorage`
+---
 The `getStorage` function retrieves the value for a specified key from a specified smart contract.
 It does not require the user to grant permission.
 
@@ -196,11 +198,11 @@ nos.getStorage({ scriptHash, key })
 ```
 
 
----
 &nbsp;
 
 
 ## `send`
+---
 The `send` function creates a contract transaction to send assets (NEO or GAS) to a specified
 address on behalf of the currently authenticated account.  It requires the user to grant permission.
 
@@ -225,3 +227,4 @@ nos.send({ asset: GAS, amount, receiver })
     .then((txid) => alert(`${amount} GAS sent in transaction ${txid}`))
     .catch((err) => alert(`Error: ${err.message}`));
 ```
+---
