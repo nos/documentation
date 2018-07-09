@@ -23,7 +23,6 @@ jobs:
             git config --global user.name "$GITHUB_NAME"
             echo "machine github.com login $GITHUB_USERNAME password $GITHUB_TOKEN" > ~/.netrc
             cd website && yarn install && GIT_USER=$GIT_USER yarn run publish-gh-pages
-      - run: yarn test
 
 workflows:
   version: 2
