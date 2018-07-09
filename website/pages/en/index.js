@@ -91,8 +91,8 @@ class HomeSplash extends React.Component {
 
 const Display = props => (
   <div className="productShowcaseSection">
-  <img src={imgUrl('screenshot.png')} alt="client" title="client" 
-    style={{ boxShadow: "box-shadow:10px 10px 25px #80808066;" }}
+  <img src={imgUrl('screenshot.png')} alt="client" title="client"
+    style={{ boxShadow: "10px 10px 25px #80808066" }}
     width={800}
     width={800}
   />
