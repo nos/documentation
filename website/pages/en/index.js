@@ -5,25 +5,25 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
+const React = require("react");
 
-const CompLibrary = require('../../core/CompLibrary.js');
+const CompLibrary = require("../../core/CompLibrary.js");
 const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-const siteConfig = require(process.cwd() + '/siteConfig.js');
+const siteConfig = require(process.cwd() + "/siteConfig.js");
 
 function imgUrl(img) {
-  return siteConfig.baseUrl + 'img/' + img;
+  return siteConfig.baseUrl + "img/" + img;
 }
 
 function docUrl(doc, language) {
-  return siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
+  return siteConfig.baseUrl + "docs/" + (language ? language + "/" : "") + doc;
 }
 
 function pageUrl(page, language) {
-  return siteConfig.baseUrl + (language ? language + '/' : '') + page;
+  return siteConfig.baseUrl + (language ? language + "/" : "") + page;
 }
 
 class Button extends React.Component {
@@ -39,7 +39,7 @@ class Button extends React.Component {
 }
 
 Button.defaultProps = {
-  target: '_self',
+  target: "_self"
 };
 
 const SplashContainer = props => (
@@ -52,7 +52,7 @@ const SplashContainer = props => (
 
 const Logo = props => (
   <div className="projectLogo">
-    <img src={props.img_src} href={docUrl('intro.html', props.language)} />
+    <img src={props.img_src} href={docUrl("intro.html", props.language)} />
   </div>
 );
 
@@ -73,15 +73,17 @@ const PromoSection = props => (
 
 class HomeSplash extends React.Component {
   render() {
-    let language = this.props.language || '';
+    let language = this.props.language || "";
     return (
       <SplashContainer>
-        <Logo img_src={imgUrl('logo.svg')} />
+        <Logo img_src={imgUrl("logo.svg")} />
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href={docUrl('intro.html', language)}>Documentation</Button>
-            <Button href="https://medium.com/nos-io" target="_blank">Blog</Button>
+            <Button href={docUrl("intro.html", language)}>Documentation</Button>
+            <Button href="https://medium.com/nos-io" target="_blank">
+              Blog
+            </Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -91,17 +93,20 @@ class HomeSplash extends React.Component {
 
 const Display = props => (
   <div className="productShowcaseSection">
-  <img src={imgUrl('screenshot.png')} alt="client" title="client" 
-    style={{ boxShadow: "box-shadow:10px 10px 25px #80808066;" }}
-    width={800}
-    width={800}
-  />
-</div>
+    <img
+      src={imgUrl("screenshot.png")}
+      alt="client"
+      title="client"
+      style={{ boxShadow: "10px 10px 25px #80808066" }}
+      width={800}
+      width={800}
+    />
+  </div>
 );
 
 class Index extends React.Component {
   render() {
-    let language = this.props.language || '';
+    let language = this.props.language || "";
 
     return (
       <div>
