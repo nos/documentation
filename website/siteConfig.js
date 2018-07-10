@@ -94,7 +94,10 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-   repoUrl: 'https://github.com/nos/client'
+   repoUrl: 'https://github.com/nos/client',
+
+   // Website URL
+   cname: 'docs.nos.io'
 };
 
 module.exports = siteConfig;
