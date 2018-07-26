@@ -1,5 +1,5 @@
 ---
-id: installation-troubleshooting
+id: troubleshooting
 title: Installation Troubleshooting
 sidebar_label:  Installation Troubleshooting
 ---
