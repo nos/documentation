@@ -13,8 +13,6 @@ client, the API can be accessed via `window.NOS.V1`.  All functions return a
 user rejects the action.
 
 
-
-
 ## `getAddress`
 ---
 The `getAddress` function provides the address of the currently authenticated account.  It does not
@@ -34,10 +32,6 @@ nos.getAddress()
   .then((address) => alert(`Address: ${address}`))
   .catch((err) => alert(`Error: ${err.message}`));
 ```
-
-
-
-&nbsp;
 
 
 ## `getBalance`
@@ -72,9 +66,6 @@ nos.getBalance({ asset: NEO, address })
 ```
 
 
-&nbsp;
-
-
 ## `claimGas`
 ---
 The `claimGas` function claims any unclaimed GAS on behalf of the currently authenticated account.
@@ -94,9 +85,6 @@ nos.claimGas()
     .then((txid) => alert(`GAS claim txid: ${txid}`))
     .catch((err) => alert(`Error: ${err.message}`));
 ```
-
-
-&nbsp;
 
 
 ## `testInvoke`
@@ -131,9 +119,6 @@ nos.testInvoke({ scriptHash, operation, args })
 ```
 
 
-&nbsp;
-
-
 ## `invoke`
 ---
 The `invoke` function executes an invocation transaction on behalf of the currently authenticated
@@ -165,9 +150,6 @@ nos.invoke({ scriptHash, operation, args })
 ```
 
 
-&nbsp;
-
-
 ## `getStorage`
 ---
 The `getStorage` function retrieves the value for a specified key from a specified smart contract.
@@ -196,9 +178,6 @@ nos.getStorage({ scriptHash, key })
     .then((data) => alert(`Get storage data: ${data} `))
     .catch((err) => alert(`Error: ${err.message}`));
 ```
-
-
-&nbsp;
 
 
 ## `send`
