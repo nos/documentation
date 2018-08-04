@@ -35,7 +35,6 @@
 ## Checklist:
 - [ ] I have read the **[CONTRIBUTING](./CONTRIBUTING.md)** guidelines and confirm that my code follows the code style of this project.
 - [ ] Tests for the changes have been added (for bug fixes / features)
-- [ ] Docs have been added / updated (for bug fixes / features)
 
 
 
