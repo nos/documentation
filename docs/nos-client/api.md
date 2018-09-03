@@ -145,6 +145,7 @@ account.  It requires the user to grant permission.
 * `config.operation` **string** - The operation of the Smart Contract you want to invoke.
 * `config.args` **string[]** - An arguments array of the Smart Contract you want to invoke.
 * `config.encodeArgs` **boolean** (Optional) - A flag detailing whether or not you want the nOS API to handle encoding or `args`. This is `true` by default.
+* `config.assets` **object** (Optional) - A key/value pair representing any asset ID and amount that should be transferred with the invocation.  Any assets will be sent to the address representing `config.scriptHash`.
 
 #### Returns
 **string** - The invocation transaction ID.
@@ -160,6 +161,18 @@ const args = ['ef68bcda-2892-491a-a7e6-9c4cb1a11732'];
 // If you handle encoding yourself, use:
 // nos.invoke({ scriptHash, operation, args, encodeArgs: false })
 nos.invoke({ scriptHash, operation, args })
+    .then((txid) => alert(`Invoke txid: ${txid} `))
+    .catch((err) => alert(`Error: ${err.message}`));
+
+// Example with assets attached
+const { NEO, GAS } = window.NOS.ASSETS;
+
+const assets = {
+  [NEO]: '1',
+  [GAS]: '3.04950068'
+};
+
+nos.invoke({ scriptHash, operation, args, assets })
     .then((txid) => alert(`Invoke txid: ${txid} `))
     .catch((err) => alert(`Error: ${err.message}`));
 ```
