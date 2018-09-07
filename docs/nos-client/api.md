@@ -56,8 +56,8 @@ specified asset or NEP5 token.  It does not require the user to grant permission
 #### Example
 ```javascript
 const nos = window.NOS.V1;
+const { NEO } = window.NOS.ASSETS;
 
-const NEO = 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b';
 const address = 'AZPkgTJixxkSFPyBZrcVpLj9nsHsPDUVkF';
 
 // Example without the optional parameter
@@ -145,6 +145,7 @@ account.  It requires the user to grant permission.
 * `config.operation` **string** - The operation of the Smart Contract you want to invoke.
 * `config.args` **string[]** - An arguments array of the Smart Contract you want to invoke.
 * `config.encodeArgs` **boolean** (Optional) - A flag detailing whether or not you want the nOS API to handle encoding or `args`. This is `true` by default.
+* `config.assets` **object** (Optional) - A key/value pair representing any asset ID and amount that should be transferred with the invocation.  Any assets will be sent to the address representing `config.scriptHash`.
 
 #### Returns
 **string** - The invocation transaction ID.
@@ -160,6 +161,18 @@ const args = ['ef68bcda-2892-491a-a7e6-9c4cb1a11732'];
 // If you handle encoding yourself, use:
 // nos.invoke({ scriptHash, operation, args, encodeArgs: false })
 nos.invoke({ scriptHash, operation, args })
+    .then((txid) => alert(`Invoke txid: ${txid} `))
+    .catch((err) => alert(`Error: ${err.message}`));
+
+// Example with assets attached
+const { NEO, GAS } = window.NOS.ASSETS;
+
+const assets = {
+  [NEO]: '1',
+  [GAS]: '3.04950068'
+};
+
+nos.invoke({ scriptHash, operation, args, assets })
     .then((txid) => alert(`Invoke txid: ${txid} `))
     .catch((err) => alert(`Error: ${err.message}`));
 ```
@@ -219,8 +232,8 @@ address on behalf of the currently authenticated account.  It requires the user 
 #### Example
 ```javascript
 const nos = window.NOS.V1;
+const { GAS } = window.NOS.ASSETS;
 
-const GAS = '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7';
 const amount = '1';
 const receiver = 'AMh8o3uv5PwdryBsiZPd5zoVBDVaredZLG';
 
@@ -229,3 +242,19 @@ nos.send({ asset: GAS, amount, receiver })
     .catch((err) => alert(`Error: ${err.message}`));
 ```
 ---
+
+&nbsp;
+
+## `ASSETS`
+---
+
+There are a set of predefined assets exposed through the API for easy access.
+You can retrieve the assets using the following example.
+
+```
+const { 
+    NEO, // contains 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b'
+    GAS  // contains '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7'
+} = window.NOS.ASSETS
+
+```
