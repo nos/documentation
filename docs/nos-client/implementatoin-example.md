@@ -10,9 +10,8 @@ functionalities of nOS.
 
 ```javascript
 const nos = window.NOS.V1;
+const { NEO, GAS } = window.NOS.ASSETS;
 
-const NEO = 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b';
-const GAS = '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7';
 const RPX = 'ecc6b20d3ccac1ee9ef109af5a7cdb85706b1df9';
 
 const scriptHash = '2f228c37687d474d0a65d7d82d4ebf8a24a3fcbc';

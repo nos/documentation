@@ -56,8 +56,8 @@ specified asset or NEP5 token.  It does not require the user to grant permission
 #### Example
 ```javascript
 const nos = window.NOS.V1;
+const { NEO } = window.NOS.ASSETS;
 
-const NEO = 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b';
 const address = 'AZPkgTJixxkSFPyBZrcVpLj9nsHsPDUVkF';
 
 // Example without the optional parameter
@@ -232,8 +232,8 @@ address on behalf of the currently authenticated account.  It requires the user 
 #### Example
 ```javascript
 const nos = window.NOS.V1;
+const { GAS } = window.NOS.ASSETS;
 
-const GAS = '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7';
 const amount = '1';
 const receiver = 'AMh8o3uv5PwdryBsiZPd5zoVBDVaredZLG';
 
@@ -242,3 +242,19 @@ nos.send({ asset: GAS, amount, receiver })
     .catch((err) => alert(`Error: ${err.message}`));
 ```
 ---
+
+&nbsp;
+
+## `ASSETS`
+---
+
+There are a set of predefined assets exposed through the API for easy access.
+You can retrieve the assets using the following example.
+
+```
+const { 
+    NEO, // contains 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b'
+    GAS  // contains '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7'
+} = window.NOS.ASSETS
+
+```
