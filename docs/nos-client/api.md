@@ -13,7 +13,78 @@ client, the API can be accessed via `window.NOS.V1`.  All functions return a
 user rejects the action.
 
 
+## Import and usage of the nOS API
+---
 
+## Vanilla Javascript
+```javascript
+// Contains all nOS API Functions
+const nos = window.NOS.V1;
+
+// Contains all exposed assets
+const assets = window.NOS.ASSETS;
+```
+
+## Installation and usage of API-Functions
+
+First, we need to install the [api-functions](https://www.npmjs.com/package/@nosplatform/api-functions) npm package. This is done with the command(s) below.
+
+```javascript
+// Using NPM
+npm i --save @nosplatform/api-functions
+
+// Using Yarn
+yarn add @nosplatform/api-functions
+```
+
+#### Usage api-functions inside React
+To use the nOS API inside a React package, we highly suggest using the HoC component and the nosProps for validation.
+```javascript
+import React from "react";
+
+// Import the nOS HoC which you can use to bind the props to any component
+// Import nosProps for validation
+import { injectNOS, nosProps } from "@nosplatform/api-functions/lib/react";
+
+class MyComponent extends React.Component {
+  static propTypes = {
+      nos: nosProps.isRequired
+  };
+
+  handleAlert = async func => alert(await func);
+
+  render() {
+    const { classes, nos } = this.props;
+
+    return (
+        <button onClick={() => this.handleAlert(nos.getAddress())}>
+            Get Address
+        </button>
+    );
+  }
+}
+
+export default injectNOS(MyComponent);
+```
+
+
+#### Usage api-functions inside Angular/VueJS/Other libraries or frameworks
+With any other framework or library you can use the [api-functions](https://www.npmjs.com/package/@nosplatform/api-functions) as followed.
+```javascript
+// All API functionalities are wrapped in the nos object, this can also be used for React if you wish not to use the Higher Order Component.
+import nos from "@nosplatform/api-functions/lib";
+
+nos.getAddress()
+    .then(address => window.alert(address))
+    .catch(error => window.alert(error));
+```
+
+
+&nbsp;
+
+
+# Overview API
+**Note** - all examples use the vanilla javascript import strategy. Simply switch out the import of `const nos = window.NOS.V1` with [the examples above](#Installation-and-usage-of-API-Functions) when using React/Angular or  other javascript frameworks and libraries.
 
 ## `getAddress`
 ---

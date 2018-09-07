@@ -5,8 +5,11 @@ sidebar_label:  Implementation example
 ---
 
 
+## Vanilla Javascript
+---
+
 This is an example of a service layer in your frontend application which implements all
-functionalities of nOS.
+functionalities of nOS in vanilla Javascript.
 
 ```javascript
 const nos = window.NOS.V1;

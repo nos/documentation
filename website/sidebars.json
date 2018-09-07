@@ -5,7 +5,7 @@
       "nos-client/getting-started",
       "nos-client/api",
       "nos-client/implementation-example",
-      "nos-client/features",
+      "nos-client/debugging",
       "nos-client/troubleshooting"
     ],
     "Create nOS dApp": [
