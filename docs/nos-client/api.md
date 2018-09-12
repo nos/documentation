@@ -75,6 +75,28 @@ nos.getBalance({ asset: NEO, address })
 &nbsp;
 
 
+## `getLastBlock`
+---
+The `getLastBlock` function provides the last known block that was fetched by the client.  It does
+not require the user to grant permission.
+
+#### Returns
+**object** - An object representing the last known block.  Refer to verbose response body in the NEO [getBlock](http://docs.neo.org/en-us/node/cli/2.7.4/api/getblock.html) documentation for a breakdown
+of this object's structure.
+
+#### Example
+```javascript
+const nos = window.NOS.V1;
+
+nos.getLastBlock()
+  .then((block) => console.log('Last Block:', block))
+  .catch((err) => alert(`Error: ${err.message}`));
+```
+
+
+&nbsp;
+
+
 ## `claimGas`
 ---
 The `claimGas` function claims any unclaimed GAS on behalf of the currently authenticated account.
@@ -252,7 +274,7 @@ There are a set of predefined assets exposed through the API for easy access.
 You can retrieve the assets using the following example.
 
 ```
-const { 
+const {
     NEO, // contains 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b'
     GAS  // contains '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7'
 } = window.NOS.ASSETS
