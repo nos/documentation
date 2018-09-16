@@ -1,7 +1,7 @@
 ---
 id: intro
-title: Welcome to the nOS community!
-sidebar_label: Welcome to nOS!
+title: Welcome to the nOS community
+sidebar_label: Welcome to nOS
 ---
 
 We appreciate you taking the time for reading our documentation and guidelines!
