@@ -8,9 +8,10 @@
 <url> <loc>https://docs.nos.io/docs/create-nos-dapp/react.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/create-nos-dapp/react.html" /> </url>
 <url> <loc>https://docs.nos.io/docs/intro.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/intro.html" /> </url>
 <url> <loc>https://docs.nos.io/docs/nos-client/api.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/api.html" /> </url>
-<url> <loc>https://docs.nos.io/docs/nos-client/features.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/features.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/nos-client/debugging.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/debugging.html" /> </url>
 <url> <loc>https://docs.nos.io/docs/nos-client/getting-started.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/getting-started.html" /> </url>
 <url> <loc>https://docs.nos.io/docs/nos-client/implementation-example.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/implementation-example.html" /> </url>
+<url> <loc>https://docs.nos.io/docs/nos-client/troubleshooting.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-client/troubleshooting.html" /> </url>
 <url> <loc>https://docs.nos.io/docs/nos-local/faq.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-local/faq.html" /> </url>
 <url> <loc>https://docs.nos.io/docs/nos-local/installation-usage.html</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.nos.io/docs/nos-local/installation-usage.html" /> </url>
 </urlset>
