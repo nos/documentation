@@ -5,17 +5,58 @@ sidebar_label: API Overview
 ---
 
 **NOTE: The API is in active development and may change frequently.  Be sure to check back
-regularly. All API functions will have a maximum of ONE argument: a JSON object containing all the necessary info.**
+regularly. All API functions will have a maximum of ONE argument: a JSON object containing all the
+necessary info.**
 
 The nOS client provides a prebuilt API that is still growing.  For any dApp running through the
-client, the API can be accessed via `window.NOS.V1`.  All functions return a
-[`Promise`](https://www.google.com/search?q=js+promise&oq=js+promise&aqs=chrome..69i57j69i60l3.731j0j7&sourceid=chrome&ie=UTF-8), which can be used to determine if the call succeeded or failed.  Some calls will fail if the
-user rejects the action.
+client, the API can be accessed via `window.NOS.V1`.
 
 
+## Events
+
+Some events have been exposed to provide insight pertaining to network and blockchain changes.  The
+`on` and `once` functions permit subscribing to an event indefinitely or once, respectively.  Each
+of these calls returns a subscription identifier, which can be used to unsubscribe via the `off`
+function.
+
+```javascript
+// subscribe indefinitely
+const subscription = nos.on('someEvent', () => { /* callback */ });
+
+// subscribe once (automatically unsubscribes after first event)
+const subscription = nos.once('someEvent', () => { /* callback */ });
+
+// unsubscribe (optional)
+nos.off('block', subscription);
+```
+
+### `block`
+
+The "block" event is published whenever a new block is discovered on the NEO blockchain.
+
+#### Returns
+**object** - An object representing the last known block.  Refer to verbose response body in the NEO [getblock](http://docs.neo.org/en-us/node/cli/2.7.4/api/getblock.html) documentation for a breakdown of this object's structure.
+
+#### Example
+
+```javascript
+// subscribe
+nos.on('block', (block) => {
+  console.log('New block:', block);
+});
+```
 
 
-## `getAddress`
+&nbsp;
+
+
+## Functions
+
+All nOS API functions return a [`Promise`](https://en.wikipedia.org/wiki/Futures_and_promises),
+which can be used to determine if the call succeeded or failed.  Some calls will fail if the user
+rejects the action.
+
+### `getAddress`
 ---
 The `getAddress` function provides the address of the currently authenticated account.  It does not
 require the user to grant permission.
@@ -36,11 +77,10 @@ nos.getAddress()
 ```
 
 
-
 &nbsp;
 
 
-## `getBalance`
+### `getBalance`
 ---
 The `getBalance` function provides the balance of a certain address for a
 specified asset or NEP5 token.  It does not require the user to grant permission.
@@ -75,7 +115,7 @@ nos.getBalance({ asset: NEO, address })
 &nbsp;
 
 
-## `getLastBlock`
+### `getLastBlock`
 ---
 The `getLastBlock` function provides the last known block that was fetched by the client.  It does
 not require the user to grant permission.
@@ -97,7 +137,7 @@ nos.getLastBlock()
 &nbsp;
 
 
-## `claimGas`
+### `claimGas`
 ---
 The `claimGas` function claims any unclaimed GAS on behalf of the currently authenticated account.
 It requires the user to grant permission.
@@ -121,7 +161,7 @@ nos.claimGas()
 &nbsp;
 
 
-## `testInvoke`
+### `testInvoke`
 ---
 The `testInvoke` function executes a test invocation transaction on behalf of the currently
 authenticated account.  It does not require the user to grant permission.
@@ -156,7 +196,7 @@ nos.testInvoke({ scriptHash, operation, args })
 &nbsp;
 
 
-## `invoke`
+### `invoke`
 ---
 The `invoke` function executes an invocation transaction on behalf of the currently authenticated
 account.  It requires the user to grant permission.
@@ -203,7 +243,7 @@ nos.invoke({ scriptHash, operation, args, assets })
 &nbsp;
 
 
-## `getStorage`
+### `getStorage`
 ---
 The `getStorage` function retrieves the value for a specified key from a specified smart contract.
 It does not require the user to grant permission.
@@ -236,7 +276,7 @@ nos.getStorage({ scriptHash, key })
 &nbsp;
 
 
-## `send`
+### `send`
 ---
 The `send` function creates a contract transaction to send assets (NEO or GAS) to a specified
 address on behalf of the currently authenticated account.  It requires the user to grant permission.
@@ -267,16 +307,18 @@ nos.send({ asset: GAS, amount, receiver })
 
 &nbsp;
 
-## `ASSETS`
+## Constants
 ---
+
+### `ASSETS`
 
 There are a set of predefined assets exposed through the API for easy access.
 You can retrieve the assets using the following example.
 
 ```
 const {
-    NEO, // contains 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b'
-    GAS  // contains '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7'
+  NEO, // contains 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b'
+  GAS  // contains '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7'
 } = window.NOS.ASSETS
 
 ```
