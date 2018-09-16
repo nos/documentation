@@ -22,12 +22,11 @@ function.
 ```javascript
 // subscribe indefinitely
 const subscription = nos.on('someEvent', () => { /* callback */ });
+nos.off('block', subscription);  // unsubscribe (optional)
 
 // subscribe once (automatically unsubscribes after first event)
 const subscription = nos.once('someEvent', () => { /* callback */ });
-
-// unsubscribe (optional)
-nos.off('block', subscription);
+nos.off('block', subscription);  // unsubscribe (optional)
 ```
 
 ### `block`
@@ -42,7 +41,7 @@ The "block" event is published whenever a new block is discovered on the NEO blo
 ```javascript
 // subscribe
 nos.on('block', (block) => {
-  console.log('New block:', block);
+  console.log('Latest block:', block);
 });
 ```
 
