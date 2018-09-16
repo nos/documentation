@@ -38,11 +38,12 @@ yarn add @nosplatform/api-functions
 ```
 
 #### Usage api-functions inside React
-To use the nOS API inside a React package, we highly suggest using the HoC component and the nosProps for validation.
+To use the nOS API inside a React package,we highly recommend using the `injectNOS` HOC and `nosProps` propTypes from [api-functions](https://www.npmjs.com/package/@nosplatform/api-functions) .
+
 ```javascript
 import React from "react";
 
-// Import the nOS HoC which you can use to bind the props to any component
+// Import the nOS HOC which you can use to bind the props to any component
 // Import nosProps for validation
 import { injectNOS, nosProps } from "@nosplatform/api-functions/lib/react";
 
@@ -57,9 +58,9 @@ class MyComponent extends React.Component {
     const { classes, nos } = this.props;
 
     return (
-        <button onClick={() => this.handleAlert(nos.getAddress())}>
-            Get Address
-        </button>
+      <button onClick={() => this.handleAlert(nos.getAddress())}>
+          Get Address
+      </button>
     );
   }
 }
@@ -84,7 +85,7 @@ nos.getAddress()
 
 
 # Overview API
-**Note** - all examples use the vanilla javascript import strategy. Simply switch out the import of `const nos = window.NOS.V1` with [the examples above](#Installation-and-usage-of-API-Functions) when using React/Angular or  other javascript frameworks and libraries.
+**NOTE** - all examples use the vanilla javascript import strategy. Simply switch out the import of `const nos = window.NOS.V1` with [the examples above](#Installation-and-usage-of-API-Functions) when using React/Angular or  other javascript frameworks and libraries.
 
 ## `getAddress`
 ---
