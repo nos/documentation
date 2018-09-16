@@ -4,10 +4,6 @@ title: Welcome to the nOS community
 sidebar_label: Welcome to nOS
 ---
 
-We appreciate you taking the time for reading our documentation and guidelines!
-
-Some useful resources are listed below.
-
 Join the developers' community on [Discord](https://discord.nos.io).
 
 ##### Documentation
