@@ -12,7 +12,9 @@ The nOS client provides a prebuilt API that is still growing.  For any dApp runn
 client, the API can be accessed via `window.NOS.V1`.
 
 
-## Events
+Events
+---
+
 
 Some events have been exposed to provide insight pertaining to network and blockchain changes.  The
 `on` and `once` functions permit subscribing to an event indefinitely or once, respectively.  Each
@@ -49,7 +51,9 @@ nos.on('block', (block) => {
 &nbsp;
 
 
-## Functions
+Functions
+---
+
 
 All nOS API functions return a [`Promise`](https://en.wikipedia.org/wiki/Futures_and_promises),
 which can be used to determine if the call succeeded or failed.  Some calls will fail if the user
@@ -305,7 +309,7 @@ nos.send({ asset: GAS, amount, receiver })
 
 &nbsp;
 
-## Constants
+Constants
 ---
 
 ### `ASSETS`
