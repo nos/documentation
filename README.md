@@ -1,4 +1,4 @@
-# documentation
+# Documentation
 This is the official repository for all documentation regarding the **nOS Client**, **nOS-Local** and **Create-nOS-dApp**.
 
 &nbsp;
@@ -10,7 +10,7 @@ This can be achieved by just editing the *.md files under the `/docs` folder
 
 #### Adding new documentation
 This can be achieved by creating a new *.md file under the `/docs/*` folder
-AND adding this file to `/website/sidebars.json`
+AND adding the ID of this file to `/website/sidebars.json`
 
 &nbsp;
 
