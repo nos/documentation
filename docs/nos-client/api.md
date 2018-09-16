@@ -121,8 +121,7 @@ The `getLastBlock` function provides the last known block that was fetched by th
 not require the user to grant permission.
 
 #### Returns
-**object** - An object representing the last known block.  Refer to verbose response body in the NEO [getBlock](http://docs.neo.org/en-us/node/cli/2.7.4/api/getblock.html) documentation for a breakdown
-of this object's structure.
+**object** - An object representing the last known block.  Refer to verbose response body in the NEO [getblock](http://docs.neo.org/en-us/node/cli/2.7.4/api/getblock.html) documentation for a breakdown of this object's structure.
 
 #### Example
 ```javascript
