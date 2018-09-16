@@ -12,7 +12,83 @@ The nOS client provides a prebuilt API that is still growing.  For any dApp runn
 client, the API can be accessed via `window.NOS.V1`.
 
 
-Events
+## Import and usage of the nOS API
+---
+
+## Vanilla Javascript
+```javascript
+// Contains all nOS API Functions
+const nos = window.NOS.V1;
+
+// Contains all exposed assets
+const assets = window.NOS.ASSETS;
+```
+
+## Installation and usage of API-Functions
+
+First, we need to install the [api-functions](https://www.npmjs.com/package/@nosplatform/api-functions) npm package. This is done with the command(s) below.
+
+```javascript
+// Using NPM
+npm i --save @nosplatform/api-functions
+
+// Using Yarn
+yarn add @nosplatform/api-functions
+```
+
+#### Using api-functions inside React
+To use the nOS API inside a React package,we highly recommend using the `injectNOS` HOC and `nosProps` propTypes from [api-functions](https://www.npmjs.com/package/@nosplatform/api-functions) .
+
+```javascript
+import React from "react";
+
+// Import the nOS HOC which you can use to bind the props to any component
+// Import nosProps for validation
+import { injectNOS, nosProps } from "@nosplatform/api-functions/lib/react";
+
+class MyComponent extends React.Component {
+  static propTypes = {
+    nos: nosProps.isRequired
+  };
+
+  handleAlert = async func => alert(await func);
+
+  render() {
+    const { classes, nos } = this.props;
+
+    return (
+      <button onClick={() => this.handleAlert(nos.getAddress())}>
+        Get Address
+      </button>
+    );
+  }
+}
+
+export default injectNOS(MyComponent);
+```
+
+
+#### Using api-functions inside Angular/VueJS/Other libraries or frameworks
+With any other framework or library you can use the [api-functions](https://www.npmjs.com/package/@nosplatform/api-functions) as followed.
+```javascript
+// All API functionalities are wrapped in the nos object, this can also be used for React if you wish not to use the Higher Order Component.
+import nos from "@nosplatform/api-functions/lib";
+
+nos.getAddress()
+    .then(address => window.alert(address))
+    .catch(error => window.alert(error));
+```
+
+
+&nbsp;
+
+
+# Overview API
+
+**NOTE** - all examples use the vanilla javascript import strategy. Simply switch out the import of `const nos = window.NOS.V1` with [the examples above](#Installation-and-usage-of-API-Functions) when using React/Angular or  other javascript frameworks and libraries.
+
+
+## Events
 ---
 
 
@@ -31,7 +107,11 @@ const subscription = nos.once('someEvent', () => { /* callback */ });
 nos.off('block', subscription);  // unsubscribe (optional)
 ```
 
+&nbsp;
+
+
 ### `block`
+---
 
 The "block" event is published whenever a new block is discovered on the NEO blockchain.
 
@@ -51,13 +131,17 @@ nos.on('block', (block) => {
 &nbsp;
 
 
-Functions
+## Functions
 ---
 
 
 All nOS API functions return a [`Promise`](https://en.wikipedia.org/wiki/Futures_and_promises),
 which can be used to determine if the call succeeded or failed.  Some calls will fail if the user
 rejects the action.
+
+
+&nbsp;
+
 
 ### `getAddress`
 ---
@@ -305,14 +389,17 @@ nos.send({ asset: GAS, amount, receiver })
     .then((txid) => alert(`${amount} GAS sent in transaction ${txid}`))
     .catch((err) => alert(`Error: ${err.message}`));
 ```
+
+
+&nbsp;
+
+## Constants
 ---
 
 &nbsp;
 
-Constants
----
-
 ### `ASSETS`
+---
 
 There are a set of predefined assets exposed through the API for easy access.
 You can retrieve the assets using the following example.
