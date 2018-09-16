@@ -37,7 +37,7 @@ npm i --save @nosplatform/api-functions
 yarn add @nosplatform/api-functions
 ```
 
-#### Usage api-functions inside React
+#### Using api-functions inside React
 To use the nOS API inside a React package,we highly recommend using the `injectNOS` HOC and `nosProps` propTypes from [api-functions](https://www.npmjs.com/package/@nosplatform/api-functions) .
 
 ```javascript
@@ -49,7 +49,7 @@ import { injectNOS, nosProps } from "@nosplatform/api-functions/lib/react";
 
 class MyComponent extends React.Component {
   static propTypes = {
-      nos: nosProps.isRequired
+    nos: nosProps.isRequired
   };
 
   handleAlert = async func => alert(await func);
@@ -59,7 +59,7 @@ class MyComponent extends React.Component {
 
     return (
       <button onClick={() => this.handleAlert(nos.getAddress())}>
-          Get Address
+        Get Address
       </button>
     );
   }
@@ -69,7 +69,7 @@ export default injectNOS(MyComponent);
 ```
 
 
-#### Usage api-functions inside Angular/VueJS/Other libraries or frameworks
+#### Using api-functions inside Angular/VueJS/Other libraries or frameworks
 With any other framework or library you can use the [api-functions](https://www.npmjs.com/package/@nosplatform/api-functions) as followed.
 ```javascript
 // All API functionalities are wrapped in the nos object, this can also be used for React if you wish not to use the Higher Order Component.
