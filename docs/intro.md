@@ -4,7 +4,7 @@ title: Welcome to the nOS community
 sidebar_label: Welcome to nOS
 ---
 
-Join the developers' community on [Discord](https://discord.nos.io).
+Also join the developers' community on [Discord](https://discord.nos.io).
 
 ##### Documentation
 - [nOS Client](./nos-client/getting-started.html)
