@@ -13,7 +13,12 @@ API.
 ## Current Features
 ---
 ### Client API
-When browsing with the nOS Client, the client exposes a set a functions to interact with the NEO Blockchain.
+When browsing with the nOS client, the client exposes a set a functions to interact with the NEO
+Blockchain.
+
+### Events API
+When browsing with the nOS client, the client exposes a set of events for being notified about
+network and blockchain changes.
 
 ### `nos://` protocol
 If your dApp links to a target with an `nos://` protocol, the nOS client will treat it as a dApp
@@ -24,15 +29,11 @@ More details forthcoming.
 
 ## Upcoming features
 ---
-### Block height
-The nOS API will expose a function for fetching the current block height.
+### `getNetwork` API Function
+The nOS API will expose a function for fetching the current network (e.g.: "MainNet").
 
-
-### Events
-To prevent constant polling for NEO blockchain data, some event-based functionality will be added to
-the nOS client, which dApps can subscribe to.  For example, when a new block is added to the chain,
-or a new transaction for the current account is created, your dApp should be notified.  More details
-forthcoming.
+### `network` Event
+A subscribable event that triggers whenever the user changes network (e.g.: "MainNet" to "TestNet").
 
 &nbsp;
 
