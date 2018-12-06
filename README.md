@@ -1,4 +1,7 @@
 # Documentation
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nos/documentation.svg)](https://greenkeeper.io/)
+
 This is the official repository for all documentation regarding the **nOS Client**, **nOS-Local** and **Create-nOS-dApp**.
 
 &nbsp;
