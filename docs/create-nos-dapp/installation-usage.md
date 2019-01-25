@@ -18,13 +18,17 @@ sidebar_label: Installation and Usage
 
 ## Purpose
 ---
-The goal of this project is to provide a quickstart for creating nOS dApps with various frontend technologies already installed and configured to work with the nOS platform.
+The goal of this project is to provide a quickstart for creating nOS dApps with 
+various frontend technologies already installed and configured to work with the nOS platform.
 
 &nbsp;
 
 ## Installation
 ---
-First, we need to install the [npm package](https://www.npmjs.com/package/@nosplatform/create-nos-dapp). This will make the `create-nos-dapp` command available in your command prompt. You can install the npm package by executing one of the following commands
+First, we need to install the 
+[npm package](https://www.npmjs.com/package/@nosplatform/create-nos-dapp). 
+This will make the `create-nos-dapp` command available in your command prompt. 
+You can install the npm package by executing one of the following commands
 
 ```
 # Using yarn
@@ -39,12 +43,14 @@ npm i -g @nosplatform/create-nos-dapp
 ## Usage
 ---
 #### Direct usage
-At this point the `create-nos-dapp` command should be available. To create a dApp for nOS, simply open up your command prompt and execute:
+At this point the `create-nos-dapp` command should be available from your command prompt. 
+To create a dApp for nOS, simply execute:
 ```
 create-nos-dapp
 ```
 
-It will now ask you to choose a project template and what name you'd like to give it. The CLI-tool will create the project in the current working directory. 
+It will now ask you to choose a project template and what name you'd like to give it. 
+The CLI-tool will create the project in the current working directory. 
 
 #### Usage with flags
 

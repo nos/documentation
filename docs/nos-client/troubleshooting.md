@@ -1,11 +1,12 @@
 ---
 id: troubleshooting
-title: Installation Troubleshooting
-sidebar_label:  Installation Troubleshooting
+title: Troubleshooting
+sidebar_label:  Troubleshooting
 ---
 
-# Troubleshooting
 
+## Installation
+---
 Although nOS installation process is very easy and smooth in most
 of the cases, errors still may occur for some less popular configurations.
 This page aims to provide some guidance in case when you have
@@ -27,8 +28,13 @@ Output:
 prebuild-install WARN install No prebuilt binaries found (target=10.6.0 runtime=node arch=x64 platform=darwin)
 ```
 
-_Solution:_ `yarn global add node-gyp`.
+_Solution:_ 
+```bash
+yarn global add node-gyp
+sudo apt-get install libudev-dev
+sudo apt-get install libusb-1.0-0-dev
+```
 
-_Explanation:_ Some node.js modules do not have pre-compiled binaries for your version of OS/node.js. To build them you need to have node-gyp installed in the global scope.
+_Explanation:_ Some node.js modules do not have pre-compiled binaries for your version of OS/node.js. To build them you need to have node-gyp installed in the global scope aswell as having libudev-dev and libusb installed (which are used by node-gyp).
 
 ---

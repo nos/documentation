@@ -34,8 +34,8 @@ Feature requests are welcome. But take a moment to find out whether your idea fi
   Scope your work such that it can be described within 1 commit message. This is important as we will be squashing your commits when merging and thus, you will only have one commit message to work with.
 
 ### Work on a branch based of `develop`
-* `master` and `develop` are protected and require a PR with approved reviews for changes
-* Use Conventional Commits' types for branches and camelCase the topic: `feat/ui`, `chore/login`, `chore/refactorHomePage`
+- `master` and `develop` are protected and require a PR with approved reviews for changes.
+- Use Conventional Commits' types for branches and camelCase the topic: `feat/ui`, `chore/login`, `chore/refactorHomePage`.
 
 During development:
 - Ensure code is formatted through `yarn lint` (or `npm run lint`).

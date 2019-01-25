@@ -2,7 +2,7 @@
 
 Welcome to the nOS community! We're always looking for more contributors and are happy to have you.
 
-Therefor a big thank you for being here! We really appreciate you taking the time for reading our guidelines!
+Therefore a big Thank You for being here! We really appreciate you taking the time for reading our guidelines!
 
 # How to contribute
 ## Reporting Bugs
@@ -28,9 +28,9 @@ Feature requests are welcome. But take a moment to find out whether your idea fi
 
   Scope your work such that it can be described within 1 commit message. This is important as we will be squashing your commits when merging and thus, you will only have one commit message to work with.
 
-### Work on a branch based of `develop`
-* `master` and `develop` are protected and require a PR with approved reviews for changes
-* Use Conventional Commits' types for branches and camelCase the topic: `feat/ui`, `chore/login`, `chore/refactorHomePage`
+### Work on a branch based off `develop`
+- `master` and `develop` are protected and require a PR with approved reviews for changes.
+- Use Conventional Commits' types for branches and camelCase the topic: `feat/ui`, `chore/login`, `chore/refactorHomePage`.
 
 During development:
 - Ensure code is formatted through `yarn lint` (or `npm run lint`).

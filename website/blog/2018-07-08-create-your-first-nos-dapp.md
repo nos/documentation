@@ -7,7 +7,7 @@ authorFBID: 100000288288485
 
 
 Always wondered how to get started creating your first ever dApp on nOS?
-This article is the way-to-go with a zero to 100 walkthrough on how to create one!
+This article is the way-to-go with a 0 to 100 walkthrough on how to create one!
 
 <!--truncate-->
 
