@@ -179,10 +179,6 @@ specified asset or NEP5 token. It does not require the user to grant permission.
 
 #### Parameters
 
-None.
-
-#### Parameters
-
 - `config` **object** - The config options to perform this operation.
 - `config.asset` **string** - The asset ID or NEP5 token script hash.
 - `config.address` **string** (Optional) - The address of the user you'd like to receive the balance for. This defaults to the currently logged on user if the parameter is not passed.
@@ -220,6 +216,10 @@ nos
 
 The `getLastBlock` function provides the last known block that was fetched by the client. It does
 not require the user to grant permission.
+
+#### Parameters
+
+None.
 
 #### Returns
 
