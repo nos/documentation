@@ -1,5 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>API Overview · nOS Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;**NOTE: The API is in active development and may change frequently.  Be sure to check back&lt;/p&gt;
-"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="API Overview · nOS Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.nos.io/index.html"/><meta property="og:description" content="&lt;p&gt;**NOTE: The API is in active development and may change frequently.  Be sure to check back&lt;/p&gt;
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>API Overview · nOS Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;**NOTE: The API is in active development and may change frequently. Be sure to check back&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="API Overview · nOS Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.nos.io/index.html"/><meta property="og:description" content="&lt;p&gt;**NOTE: The API is in active development and may change frequently. Be sure to check back&lt;/p&gt;
 "/><meta property="og:image" content="https://docs.nos.io/img/logo.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.nos.io/img/logo.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.svg" alt="nOS Documentation"/><h2 class="headerTitleWithLogo">nOS Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/intro.html" target="_self">Documentation</a></li><li class=""><a href="https://medium.com/nos-io" target="_self">Blog</a></li><li class=""><a href="/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>nOS Client</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/intro.html">Welcome to nOS</a></li><li class="navListItem"><a class="navItem" href="/docs/contributing.html">Contributing</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">nOS Client</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/nos-client/getting-started.html">Getting started</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/nos-client/api.html">API Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/nos-client/implementation-example.html">Implementation example</a></li><li class="navListItem"><a class="navItem" href="/docs/nos-client/debugging.html">Debugging</a></li><li class="navListItem"><a class="navItem" href="/docs/nos-client/troubleshooting.html">Troubleshooting</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Create nOS dApp</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/create-nos-dapp/installation-usage.html">Installation and Usage</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">nOS ID</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/nos-id/getting-started.html">Getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">nOS Local</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/nos-local/installation-usage.html">Installation and usage</a></li></ul></div></div></section></div><script>
             var coll = document.getElementsByClassName('collapsible');
             var checkActiveCategory = true;
@@ -50,10 +50,10 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">API Overview</h1></header><article><div><span><p><strong>NOTE: The API is in active development and may change frequently.  Be sure to check back
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">API Overview</h1></header><article><div><span><p><strong>NOTE: The API is in active development and may change frequently. Be sure to check back
 regularly. All API functions will have a maximum of ONE argument: a JSON object containing all the
 necessary info.</strong></p>
-<p>The nOS client provides a prebuilt API that is still growing.  For any dApp running through the
+<p>The nOS client provides a prebuilt API that is still growing. For any dApp running through the
 client, the API can be accessed via <code>window.NOS.V1</code>.</p>
 <h2><a class="anchor" aria-hidden="true" id="import-and-usage-of-the-nos-api"></a><a href="#import-and-usage-of-the-nos-api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Import and usage of the nOS API</h2>
 <hr>
@@ -74,11 +74,11 @@ yarn add @nosplatform/api-functions
 </code></pre>
 <h4><a class="anchor" aria-hidden="true" id="using-api-functions-inside-react"></a><a href="#using-api-functions-inside-react" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using api-functions inside React</h4>
 <p>To use the nOS API inside a React package,we highly recommend using the <code>injectNOS</code> HOC and <code>nosProps</code> propTypes from <a href="https://www.npmjs.com/package/@nosplatform/api-functions">api-functions</a> .</p>
-<pre><code class="hljs css language-javascript"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 
 <span class="hljs-comment">// Import the nOS HOC which you can use to bind the props to any component</span>
 <span class="hljs-comment">// Import nosProps for validation</span>
-<span class="hljs-keyword">import</span> { injectNOS, nosProps } <span class="hljs-keyword">from</span> <span class="hljs-string">"@nosplatform/api-functions/lib/react"</span>;
+<span class="hljs-keyword">import</span> { injectNOS, nosProps } <span class="hljs-keyword">from</span> <span class="hljs-string">'@nosplatform/api-functions/lib/react'</span>;
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">static</span> propTypes = {
@@ -90,11 +90,7 @@ yarn add @nosplatform/api-functions
   render() {
     <span class="hljs-keyword">const</span> { classes, nos } = <span class="hljs-keyword">this</span>.props;
 
-    <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> this.handleAlert(nos.getAddress())}&gt;
-        Get Address
-      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
-    );
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> this.handleAlert(nos.getAddress())}&gt;Get Address<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>;
   }
 }
 
@@ -103,38 +99,43 @@ yarn add @nosplatform/api-functions
 <h4><a class="anchor" aria-hidden="true" id="using-api-functions-inside-angular-vuejs-other-libraries-or-frameworks"></a><a href="#using-api-functions-inside-angular-vuejs-other-libraries-or-frameworks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using api-functions inside Angular/VueJS/Other libraries or frameworks</h4>
 <p>With any other framework or library you can use the <a href="https://www.npmjs.com/package/@nosplatform/api-functions">api-functions</a> as followed.</p>
 <pre><code class="hljs css language-javascript"><span class="hljs-comment">// All API functionalities are wrapped in the nos object, this can also be used for React if you wish not to use the Higher Order Component.</span>
-<span class="hljs-keyword">import</span> nos <span class="hljs-keyword">from</span> <span class="hljs-string">"@nosplatform/api-functions/lib"</span>;
+<span class="hljs-keyword">import</span> nos <span class="hljs-keyword">from</span> <span class="hljs-string">'@nosplatform/api-functions/lib'</span>;
 
-nos.getAddress()
-    .then(<span class="hljs-function"><span class="hljs-params">address</span> =&gt;</span> <span class="hljs-built_in">window</span>.alert(address))
-    .catch(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">window</span>.alert(error));
+nos
+  .getAddress()
+  .then(<span class="hljs-function"><span class="hljs-params">address</span> =&gt;</span> <span class="hljs-built_in">window</span>.alert(address))
+  .catch(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">window</span>.alert(error));
 </code></pre>
 <p> </p>
 <h1><a class="anchor" aria-hidden="true" id="overview-api"></a><a href="#overview-api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview API</h1>
-<p><strong>NOTE</strong> - all examples use the vanilla javascript import strategy. Simply switch out the import of <code>const nos = window.NOS.V1</code> with <a href="#Installation-and-usage-of-API-Functions">the examples above</a> when using React/Angular or  other javascript frameworks and libraries.</p>
+<p><strong>NOTE</strong> - all examples use the vanilla javascript import strategy. Simply switch out the import of <code>const nos = window.NOS.V1</code> with <a href="#Installation-and-usage-of-API-Functions">the examples above</a> when using React/Angular or other javascript frameworks and libraries.</p>
+<p> </p>
 <h2><a class="anchor" aria-hidden="true" id="events"></a><a href="#events" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Events</h2>
 <hr>
-<p>Some events have been exposed to provide insight pertaining to network and blockchain changes.  The
-<code>on</code> and <code>once</code> functions permit subscribing to an event indefinitely or once, respectively.  Each
+<p>Some events have been exposed to provide insight pertaining to network and blockchain changes. The
+<code>on</code> and <code>once</code> functions permit subscribing to an event indefinitely or once, respectively. Each
 of these calls returns a subscription identifier, which can be used to unsubscribe via the <code>off</code>
 function.</p>
 <pre><code class="hljs css language-javascript"><span class="hljs-comment">// subscribe indefinitely</span>
-<span class="hljs-keyword">const</span> subscription = nos.on(<span class="hljs-string">'someEvent'</span>, () =&gt; { <span class="hljs-comment">/* callback */</span> });
-nos.off(<span class="hljs-string">'block'</span>, subscription);  <span class="hljs-comment">// unsubscribe (optional)</span>
+<span class="hljs-keyword">const</span> subscription = nos.on(<span class="hljs-string">'someEvent'</span>, () =&gt; {
+  <span class="hljs-comment">/* callback */</span>
+});
+nos.off(<span class="hljs-string">'block'</span>, subscription); <span class="hljs-comment">// unsubscribe (optional)</span>
 
 <span class="hljs-comment">// subscribe once (automatically unsubscribes after first event)</span>
-<span class="hljs-keyword">const</span> subscription = nos.once(<span class="hljs-string">'someEvent'</span>, () =&gt; { <span class="hljs-comment">/* callback */</span> });
-nos.off(<span class="hljs-string">'block'</span>, subscription);  <span class="hljs-comment">// unsubscribe (optional)</span>
+<span class="hljs-keyword">const</span> subscription = nos.once(<span class="hljs-string">'someEvent'</span>, () =&gt; {
+  <span class="hljs-comment">/* callback */</span>
+});
 </code></pre>
 <p> </p>
 <h3><a class="anchor" aria-hidden="true" id="block"></a><a href="#block" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>block</code></h3>
 <hr>
 <p>The &quot;block&quot; event is published whenever a new block is discovered on the NEO blockchain.</p>
 <h4><a class="anchor" aria-hidden="true" id="returns"></a><a href="#returns" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
-<p><strong>object</strong> - An object representing the last known block.  Refer to verbose response body in the NEO <a href="http://docs.neo.org/en-us/node/cli/2.7.4/api/getblock.html">getblock</a> documentation for a breakdown of this object's structure.</p>
+<p><strong>object</strong> - An object representing the last known block. Refer to verbose response body in the NEO <a href="http://docs.neo.org/en-us/node/cli/2.7.4/api/getblock.html">getblock</a> documentation for a breakdown of this object's structure.</p>
 <h4><a class="anchor" aria-hidden="true" id="example"></a><a href="#example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
 <pre><code class="hljs css language-javascript"><span class="hljs-comment">// subscribe</span>
-nos.on(<span class="hljs-string">'block'</span>, (block) =&gt; {
+nos.on(<span class="hljs-string">'block'</span>, block =&gt; {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Latest block:'</span>, block);
 });
 </code></pre>
@@ -142,12 +143,12 @@ nos.on(<span class="hljs-string">'block'</span>, (block) =&gt; {
 <h2><a class="anchor" aria-hidden="true" id="functions"></a><a href="#functions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Functions</h2>
 <hr>
 <p>All nOS API functions return a <a href="https://en.wikipedia.org/wiki/Futures_and_promises"><code>Promise</code></a>,
-which can be used to determine if the call succeeded or failed.  Some calls will fail if the user
+which can be used to determine if the call succeeded or failed. Some calls will fail if the user
 rejects the action.</p>
 <p> </p>
 <h3><a class="anchor" aria-hidden="true" id="getaddress"></a><a href="#getaddress" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>getAddress</code></h3>
 <hr>
-<p>The <code>getAddress</code> function provides the address of the currently authenticated account.  It does not
+<p>The <code>getAddress</code> function provides the address of the currently authenticated account. It does not
 require the user to grant permission.</p>
 <h4><a class="anchor" aria-hidden="true" id="parameters"></a><a href="#parameters" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
 <p>None.</p>
@@ -156,15 +157,16 @@ require the user to grant permission.</p>
 <h4><a class="anchor" aria-hidden="true" id="example-1"></a><a href="#example-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
 <pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> nos = <span class="hljs-built_in">window</span>.NOS.V1;
 
-nos.getAddress()
-  .then(<span class="hljs-function">(<span class="hljs-params">address</span>) =&gt;</span> alert(<span class="hljs-string">`Address: <span class="hljs-subst">${address}</span>`</span>))
-  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .getAddress()
+  .then(<span class="hljs-function"><span class="hljs-params">address</span> =&gt;</span> alert(<span class="hljs-string">`Address: <span class="hljs-subst">${address}</span>`</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 </code></pre>
 <p> </p>
-<h3><a class="anchor" aria-hidden="true" id="getbalance"></a><a href="#getbalance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>getBalance</code></h3>
+<h2><a class="anchor" aria-hidden="true" id="getbalance"></a><a href="#getbalance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>getBalance</code></h2>
 <hr>
 <p>The <code>getBalance</code> function provides the balance of a certain address for a
-specified asset or NEP5 token.  It does not require the user to grant permission.</p>
+specified asset or NEP5 token. It does not require the user to grant permission.</p>
 <h4><a class="anchor" aria-hidden="true" id="parameters-1"></a><a href="#parameters-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
 <ul>
 <li><code>config</code> <strong>object</strong> - The config options to perform this operation.</li>
@@ -172,7 +174,7 @@ specified asset or NEP5 token.  It does not require the user to grant permission
 <li><code>config.address</code> <strong>string</strong> (Optional) - The address of the user you'd like to receive the balance for. This defaults to the currently logged on user if the parameter is not passed.</li>
 </ul>
 <h4><a class="anchor" aria-hidden="true" id="returns-2"></a><a href="#returns-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
-<p><strong>string</strong> - The balance of the requested asset owned by a certain address.  A string is returned instead of a number to prevent floating point rounding issues.</p>
+<p><strong>string</strong> - The balance of the requested asset owned by a certain address. A string is returned instead of a number to prevent floating point rounding issues.</p>
 <h4><a class="anchor" aria-hidden="true" id="example-2"></a><a href="#example-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
 <pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> nos = <span class="hljs-built_in">window</span>.NOS.V1;
 <span class="hljs-keyword">const</span> { NEO } = <span class="hljs-built_in">window</span>.NOS.ASSETS;
@@ -180,51 +182,57 @@ specified asset or NEP5 token.  It does not require the user to grant permission
 <span class="hljs-keyword">const</span> address = <span class="hljs-string">'AZPkgTJixxkSFPyBZrcVpLj9nsHsPDUVkF'</span>;
 
 <span class="hljs-comment">// Example without the optional parameter</span>
-nos.getBalance({ <span class="hljs-attr">asset</span>: NEO })
-  .then(<span class="hljs-function">(<span class="hljs-params">balance</span>) =&gt;</span> alert(<span class="hljs-string">`Balance: <span class="hljs-subst">${balance}</span>`</span>))
-  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .getBalance({ <span class="hljs-attr">asset</span>: NEO })
+  .then(<span class="hljs-function"><span class="hljs-params">balance</span> =&gt;</span> alert(<span class="hljs-string">`Balance: <span class="hljs-subst">${balance}</span>`</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 
 <span class="hljs-comment">// Example with the optional parameter</span>
-nos.getBalance({ <span class="hljs-attr">asset</span>: NEO, address })
-  .then(<span class="hljs-function">(<span class="hljs-params">balance</span>) =&gt;</span> alert(<span class="hljs-string">`Balance: <span class="hljs-subst">${balance}</span>`</span>))
-  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));  
+nos
+  .getBalance({ <span class="hljs-attr">asset</span>: NEO, address })
+  .then(<span class="hljs-function"><span class="hljs-params">balance</span> =&gt;</span> alert(<span class="hljs-string">`Balance: <span class="hljs-subst">${balance}</span>`</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 </code></pre>
 <p> </p>
 <h3><a class="anchor" aria-hidden="true" id="getlastblock"></a><a href="#getlastblock" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>getLastBlock</code></h3>
 <hr>
-<p>The <code>getLastBlock</code> function provides the last known block that was fetched by the client.  It does
+<p>The <code>getLastBlock</code> function provides the last known block that was fetched by the client. It does
 not require the user to grant permission.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters-2"></a><a href="#parameters-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+<p>None.</p>
 <h4><a class="anchor" aria-hidden="true" id="returns-3"></a><a href="#returns-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
-<p><strong>object</strong> - An object representing the last known block.  Refer to verbose response body in the NEO <a href="http://docs.neo.org/en-us/node/cli/2.7.4/api/getblock.html">getblock</a> documentation for a breakdown of this object's structure.</p>
+<p><strong>object</strong> - An object representing the last known block. Refer to verbose response body in the NEO <a href="http://docs.neo.org/en-us/node/cli/2.7.4/api/getblock.html">getblock</a> documentation for a breakdown of this object's structure.</p>
 <h4><a class="anchor" aria-hidden="true" id="example-3"></a><a href="#example-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
 <pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> nos = <span class="hljs-built_in">window</span>.NOS.V1;
 
-nos.getLastBlock()
-  .then(<span class="hljs-function">(<span class="hljs-params">block</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Last Block:'</span>, block))
-  .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .getLastBlock()
+  .then(<span class="hljs-function"><span class="hljs-params">block</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Last Block:'</span>, block))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 </code></pre>
 <p> </p>
 <h3><a class="anchor" aria-hidden="true" id="claimgas"></a><a href="#claimgas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>claimGas</code></h3>
 <hr>
 <p>The <code>claimGas</code> function claims any unclaimed GAS on behalf of the currently authenticated account.
 It requires the user to grant permission.</p>
-<h4><a class="anchor" aria-hidden="true" id="parameters-2"></a><a href="#parameters-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+<h4><a class="anchor" aria-hidden="true" id="parameters-3"></a><a href="#parameters-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
 <p>None.</p>
 <h4><a class="anchor" aria-hidden="true" id="returns-4"></a><a href="#returns-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
 <p><strong>string</strong> - The claim transaction ID.</p>
 <h4><a class="anchor" aria-hidden="true" id="example-4"></a><a href="#example-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
 <pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> nos = <span class="hljs-built_in">window</span>.NOS.V1;
 
-nos.claimGas()
-    .then(<span class="hljs-function">(<span class="hljs-params">txid</span>) =&gt;</span> alert(<span class="hljs-string">`GAS claim txid: <span class="hljs-subst">${txid}</span>`</span>))
-    .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .claimGas()
+  .then(<span class="hljs-function"><span class="hljs-params">txid</span> =&gt;</span> alert(<span class="hljs-string">`GAS claim txid: <span class="hljs-subst">${txid}</span>`</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 </code></pre>
 <p> </p>
-<h3><a class="anchor" aria-hidden="true" id="testinvoke"></a><a href="#testinvoke" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>testInvoke</code></h3>
+<h2><a class="anchor" aria-hidden="true" id="testinvoke"></a><a href="#testinvoke" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>testInvoke</code></h2>
 <hr>
 <p>The <code>testInvoke</code> function executes a test invocation transaction on behalf of the currently
-authenticated account.  It does not require the user to grant permission.</p>
-<h4><a class="anchor" aria-hidden="true" id="parameters-3"></a><a href="#parameters-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+authenticated account. It does not require the user to grant permission.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters-4"></a><a href="#parameters-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
 <ul>
 <li><code>config</code> <strong>object</strong> - The config options to perform this operation.</li>
 <li><code>config.scriptHash</code> <strong>string</strong> - The script hash of the Smart Contract you want to invoke.</li>
@@ -244,23 +252,24 @@ authenticated account.  It does not require the user to grant permission.</p>
 
 <span class="hljs-comment">// If you handle encoding yourself, use:</span>
 <span class="hljs-comment">// nos.testInvoke({ scriptHash, operation, args, encodeArgs: false })</span>
-nos.testInvoke({ scriptHash, operation, args })
-    .then(<span class="hljs-function">(<span class="hljs-params">script</span>) =&gt;</span> alert(<span class="hljs-string">`Test invoke script: <span class="hljs-subst">${script}</span> `</span>))
-    .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .testInvoke({ scriptHash, operation, args })
+  .then(<span class="hljs-function"><span class="hljs-params">script</span> =&gt;</span> alert(<span class="hljs-string">`Test invoke script: <span class="hljs-subst">${script}</span> `</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 </code></pre>
 <p> </p>
-<h3><a class="anchor" aria-hidden="true" id="invoke"></a><a href="#invoke" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>invoke</code></h3>
+<h2><a class="anchor" aria-hidden="true" id="invoke"></a><a href="#invoke" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>invoke</code></h2>
 <hr>
 <p>The <code>invoke</code> function executes an invocation transaction on behalf of the currently authenticated
-account.  It requires the user to grant permission.</p>
-<h4><a class="anchor" aria-hidden="true" id="parameters-4"></a><a href="#parameters-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+account. It requires the user to grant permission.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters-5"></a><a href="#parameters-5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
 <ul>
 <li><code>config</code> <strong>object</strong> - The config options to perform this operation.</li>
 <li><code>config.scriptHash</code> <strong>string</strong> - The script hash of the Smart Contract you want to invoke.</li>
 <li><code>config.operation</code> <strong>string</strong> - The operation of the Smart Contract you want to invoke.</li>
 <li><code>config.args</code> <strong>string[]</strong> - An arguments array of the Smart Contract you want to invoke.</li>
 <li><code>config.encodeArgs</code> <strong>boolean</strong> (Optional) - A flag detailing whether or not you want the nOS API to handle encoding or <code>args</code>. This is <code>true</code> by default.</li>
-<li><code>config.assets</code> <strong>object</strong> (Optional) - A key/value pair representing any asset ID and amount that should be transferred with the invocation.  Any assets will be sent to the address representing <code>config.scriptHash</code>.</li>
+<li><code>config.assets</code> <strong>object</strong> (Optional) - A key/value pair representing any asset ID and amount that should be transferred with the invocation. Any assets will be sent to the address representing <code>config.scriptHash</code>.</li>
 </ul>
 <h4><a class="anchor" aria-hidden="true" id="returns-6"></a><a href="#returns-6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
 <p><strong>string</strong> - The invocation transaction ID.</p>
@@ -273,9 +282,10 @@ account.  It requires the user to grant permission.</p>
 
 <span class="hljs-comment">// If you handle encoding yourself, use:</span>
 <span class="hljs-comment">// nos.invoke({ scriptHash, operation, args, encodeArgs: false })</span>
-nos.invoke({ scriptHash, operation, args })
-    .then(<span class="hljs-function">(<span class="hljs-params">txid</span>) =&gt;</span> alert(<span class="hljs-string">`Invoke txid: <span class="hljs-subst">${txid}</span> `</span>))
-    .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .invoke({ scriptHash, operation, args })
+  .then(<span class="hljs-function"><span class="hljs-params">txid</span> =&gt;</span> alert(<span class="hljs-string">`Invoke txid: <span class="hljs-subst">${txid}</span> `</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 
 <span class="hljs-comment">// Example with assets attached</span>
 <span class="hljs-keyword">const</span> { NEO, GAS } = <span class="hljs-built_in">window</span>.NOS.ASSETS;
@@ -285,16 +295,17 @@ nos.invoke({ scriptHash, operation, args })
   [GAS]: <span class="hljs-string">'3.04950068'</span>
 };
 
-nos.invoke({ scriptHash, operation, args, assets })
-    .then(<span class="hljs-function">(<span class="hljs-params">txid</span>) =&gt;</span> alert(<span class="hljs-string">`Invoke txid: <span class="hljs-subst">${txid}</span> `</span>))
-    .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .invoke({ scriptHash, operation, args, assets })
+  .then(<span class="hljs-function"><span class="hljs-params">txid</span> =&gt;</span> alert(<span class="hljs-string">`Invoke txid: <span class="hljs-subst">${txid}</span> `</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 </code></pre>
 <p> </p>
-<h3><a class="anchor" aria-hidden="true" id="getstorage"></a><a href="#getstorage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>getStorage</code></h3>
+<h2><a class="anchor" aria-hidden="true" id="getstorage"></a><a href="#getstorage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>getStorage</code></h2>
 <hr>
 <p>The <code>getStorage</code> function retrieves the value for a specified key from a specified smart contract.
 It does not require the user to grant permission.</p>
-<h4><a class="anchor" aria-hidden="true" id="parameters-5"></a><a href="#parameters-5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+<h4><a class="anchor" aria-hidden="true" id="parameters-6"></a><a href="#parameters-6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
 <ul>
 <li><code>config</code> <strong>object</strong> - The config options to perform this operation.</li>
 <li><code>config.scriptHash</code> <strong>string</strong> - The script hash of a deployed Smart Contract.</li>
@@ -312,16 +323,17 @@ It does not require the user to grant permission.</p>
 
 <span class="hljs-comment">// If you want to handle encoding / decoding yourself, use:</span>
 <span class="hljs-comment">// nos.getStorage({ scriptHash, key, encodeInput: false, decodeOutput: false })</span>
-nos.getStorage({ scriptHash, key })
-    .then(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> alert(<span class="hljs-string">`Get storage data: <span class="hljs-subst">${data}</span> `</span>))
-    .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .getStorage({ scriptHash, key })
+  .then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> alert(<span class="hljs-string">`Get storage data: <span class="hljs-subst">${data}</span> `</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 </code></pre>
 <p> </p>
-<h3><a class="anchor" aria-hidden="true" id="send"></a><a href="#send" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>send</code></h3>
+<h2><a class="anchor" aria-hidden="true" id="send"></a><a href="#send" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>send</code></h2>
 <hr>
 <p>The <code>send</code> function creates a contract transaction to send assets (NEO or GAS) to a specified
-address on behalf of the currently authenticated account.  It requires the user to grant permission.</p>
-<h4><a class="anchor" aria-hidden="true" id="parameters-6"></a><a href="#parameters-6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+address on behalf of the currently authenticated account. It requires the user to grant permission.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters-7"></a><a href="#parameters-7" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
 <ul>
 <li><code>config</code> <strong>object</strong> - The config options to perform this operation.</li>
 <li><code>config.asset</code> <strong>string</strong> - The asset ID script hash.</li>
@@ -338,22 +350,90 @@ address on behalf of the currently authenticated account.  It requires the user 
 <span class="hljs-keyword">const</span> amount = <span class="hljs-string">'1'</span>;
 <span class="hljs-keyword">const</span> receiver = <span class="hljs-string">'AMh8o3uv5PwdryBsiZPd5zoVBDVaredZLG'</span>;
 
-nos.send({ <span class="hljs-attr">asset</span>: GAS, amount, receiver })
-    .then(<span class="hljs-function">(<span class="hljs-params">txid</span>) =&gt;</span> alert(<span class="hljs-string">`<span class="hljs-subst">${amount}</span> GAS sent in transaction <span class="hljs-subst">${txid}</span>`</span>))
-    .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+nos
+  .send({ <span class="hljs-attr">asset</span>: GAS, amount, receiver })
+  .then(<span class="hljs-function"><span class="hljs-params">txid</span> =&gt;</span> alert(<span class="hljs-string">`<span class="hljs-subst">${amount}</span> GAS sent in transaction <span class="hljs-subst">${txid}</span>`</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+</code></pre>
+<p> </p>
+<h2><a class="anchor" aria-hidden="true" id="getpublickey"></a><a href="#getpublickey" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>getPublicKey</code></h2>
+<hr>
+<p>The <code>getPublicKey</code> provides the public key of the currently authenticated account. It does not require the user to grant permission.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters-8"></a><a href="#parameters-8" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+<p>None.</p>
+<h4><a class="anchor" aria-hidden="true" id="returns-9"></a><a href="#returns-9" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
+<p><strong>string</strong> - The public key of the currently signed in user.</p>
+<h4><a class="anchor" aria-hidden="true" id="example-9"></a><a href="#example-9" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> nos = <span class="hljs-built_in">window</span>.NOS.V1;
+
+nos
+  .getPublicKey()
+  .then(<span class="hljs-function"><span class="hljs-params">publicKey</span> =&gt;</span> alert(<span class="hljs-string">`Public Key: <span class="hljs-subst">${publicKey}</span>`</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+</code></pre>
+<p> </p>
+<h2><a class="anchor" aria-hidden="true" id="encrypt"></a><a href="#encrypt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>encrypt</code></h2>
+<hr>
+<p>The <code>encrypt</code> function allows you to encrypt arbitrary data for another user (you will need his public key, please see <code>getPublicKey</code>). It does not require the user to grant permission.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters-9"></a><a href="#parameters-9" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+<ul>
+<li><code>config</code> <strong>object</strong> - The config options to perform this operation.</li>
+<li><code>config.recipientPublicKey</code> <strong>string</strong> - The public key of the recipient account.</li>
+<li><code>config.data</code> <strong>string | Buffer</strong> - The data to encrypt.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="returns-10"></a><a href="#returns-10" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
+<p><strong>object</strong> - object containing encrypted data and values needed for decryption (<code>iv</code>, <code>mac</code>, <code>data</code>)</p>
+<h4><a class="anchor" aria-hidden="true" id="example-10"></a><a href="#example-10" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> nos = <span class="hljs-built_in">window</span>.NOS.V1;
+
+<span class="hljs-comment">// The recipientPublicKey might be obtained from a shared global session in an application</span>
+<span class="hljs-comment">// for the test data below WIF of the sender account is KxDgvEKzgSBPPfuVfw67oPQBSjidEiqTHURKSDL1R7yGaGYAeYnr</span>
+<span class="hljs-keyword">const</span> recipientPublicKey = <span class="hljs-string">'031a6c6fbbdf02ca351745fa86b9ba5a9452d785ac4f7fc2b7548ca2a46c4fcf4a'</span>;
+<span class="hljs-keyword">const</span> data = <span class="hljs-string">'some text'</span>;
+
+nos
+  .encrypt({ recipientPublicKey, data })
+  .then(<span class="hljs-function">(<span class="hljs-params">{ iv, mac, data }</span>) =&gt;</span> alert(<span class="hljs-string">`iv: <span class="hljs-subst">${iv}</span>\nmac: <span class="hljs-subst">${mac}</span>\ndata: <span class="hljs-subst">${data}</span>`</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
+</code></pre>
+<p> </p>
+<h2><a class="anchor" aria-hidden="true" id="decrypt"></a><a href="#decrypt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>decrypt</code></h2>
+<hr>
+<p>The <code>decrypt</code> function allows you to decrypt previously encrypted data for this user (you will need public key of the sender account, please see <code>getPublicKey</code>). It does not require the user to grant permission.</p>
+<h4><a class="anchor" aria-hidden="true" id="parameters-10"></a><a href="#parameters-10" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parameters</h4>
+<ul>
+<li><code>config</code> <strong>object</strong> - The config options to perform this operation.</li>
+<li><code>config.senderPublicKey</code> <strong>string</strong> - The public key of the sender account.</li>
+<li><code>config.iv</code> <strong>string</strong> - The IV received during encryption.</li>
+<li><code>config.mac</code> <strong>string</strong> - The MAC received during encryption.</li>
+<li><code>config.data</code> <strong>string</strong> | <strong>Buffer</strong> - The data to decrypt.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="returns-11"></a><a href="#returns-11" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Returns</h4>
+<p><strong>Buffer</strong> - decrypted data</p>
+<h4><a class="anchor" aria-hidden="true" id="example-11"></a><a href="#example-11" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h4>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> nos = <span class="hljs-built_in">window</span>.NOS.V1;
+
+<span class="hljs-comment">// The senderPublicKey might be obtained from a shared global session in an application</span>
+<span class="hljs-comment">// for the test data below WIF of the recipient account is KxDgvEKzgSBPPfuVfw67oPQBSjidEiqTHURKSDL1R7yGaGYAeYnr</span>
+<span class="hljs-keyword">const</span> senderPublicKey = <span class="hljs-string">'031a6c6fbbdf02ca351745fa86b9ba5a9452d785ac4f7fc2b7548ca2a46c4fcf4a'</span>;
+<span class="hljs-keyword">const</span> iv = <span class="hljs-string">'cd26ef7a70b1b3fcf54ef32394008db6'</span>;
+<span class="hljs-keyword">const</span> mac = <span class="hljs-string">'170d03c25d49c7c03c8e1515a316f94fafb52feac73c46196525813883d64596'</span>;
+<span class="hljs-keyword">const</span> data = <span class="hljs-string">'16f55cabb8b9c87a85af3232f30c0a07'</span>;
+
+nos
+  .decrypt({ senderPublicKey, iv, mac, data })
+  .then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> alert(<span class="hljs-string">`Decrypted Data: <span class="hljs-subst">${data}</span>`</span>))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> alert(<span class="hljs-string">`Error: <span class="hljs-subst">${err.message}</span>`</span>));
 </code></pre>
 <p> </p>
 <h2><a class="anchor" aria-hidden="true" id="constants"></a><a href="#constants" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Constants</h2>
-<hr>
-<p> </p>
 <h3><a class="anchor" aria-hidden="true" id="assets"></a><a href="#assets" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>ASSETS</code></h3>
 <hr>
 <p>There are a set of predefined assets exposed through the API for easy access.
 You can retrieve the assets using the following example.</p>
-<pre><code class="hljs">const {
-  NEO, // contains '<span class="hljs-keyword">c</span><span class="hljs-number">56</span>f<span class="hljs-number">33</span>fc<span class="hljs-number">6</span>ecfcd<span class="hljs-number">0</span><span class="hljs-keyword">c</span><span class="hljs-number">225</span><span class="hljs-keyword">c</span><span class="hljs-number">4</span>ab<span class="hljs-number">356</span>fee<span class="hljs-number">59390</span>af<span class="hljs-number">8560</span>be<span class="hljs-number">0e930</span>faebe<span class="hljs-number">74</span>a<span class="hljs-number">6</span>daff<span class="hljs-number">7</span><span class="hljs-keyword">c</span><span class="hljs-number">9</span>b'
-  GAS  // contains '<span class="hljs-number">602</span><span class="hljs-keyword">c</span><span class="hljs-number">79718</span>b<span class="hljs-number">16e442</span>de<span class="hljs-number">58778e148</span>d<span class="hljs-number">0</span>b<span class="hljs-number">1084e3</span>b<span class="hljs-number">2</span>dffd<span class="hljs-number">5</span>de<span class="hljs-number">6</span>b<span class="hljs-number">7</span>b<span class="hljs-number">16</span>cee<span class="hljs-number">7969282</span>de<span class="hljs-number">7</span>'
-} = window.NOS.ASSETS
-
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">const</span> {
+  NEO, <span class="hljs-comment">// contains 'c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b'</span>
+  GAS <span class="hljs-comment">// contains '602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7'</span>
+} = <span class="hljs-built_in">window</span>.NOS.ASSETS;
 </code></pre>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/nos-client/getting-started.html"><span class="arrow-prev">← </span><span>Getting started</span></a><a class="docs-next button" href="/docs/nos-client/implementation-example.html"><span>Implementation example</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#import-and-usage-of-the-nos-api">Import and usage of the nOS API</a></li><li><a href="#vanilla-javascript">Vanilla Javascript</a></li><li><a href="#installation-and-usage-of-api-functions">Installation and usage of API-Functions</a></li><li><a href="#events">Events</a><ul class="toc-headings"><li><a href="#block"><code>block</code></a></li></ul></li><li><a href="#functions">Functions</a><ul class="toc-headings"><li><a href="#getaddress"><code>getAddress</code></a></li><li><a href="#getbalance"><code>getBalance</code></a></li><li><a href="#getlastblock"><code>getLastBlock</code></a></li><li><a href="#claimgas"><code>claimGas</code></a></li><li><a href="#testinvoke"><code>testInvoke</code></a></li><li><a href="#invoke"><code>invoke</code></a></li><li><a href="#getstorage"><code>getStorage</code></a></li><li><a href="#send"><code>send</code></a></li></ul></li><li><a href="#constants">Constants</a><ul class="toc-headings"><li><a href="#assets"><code>ASSETS</code></a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/en/intro.html" class="nav-home"><img src="/img/logo.svg" alt="nOS Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/nos-client/getting-started.html">nOS Client documentation</a><a href="/docs/create-nos-dapp/installation-usage.html">Create nOS dApp documentation</a><a href="/docs/nos-local/installation-usage.html">nOS Local documentation</a></div><div><h5>Community</h5><a href="https://discordapp.com/invite/eGFAskm">Discord Chat</a><a href="https://t.me/nOSplatform" target="_blank" rel="noreferrer noopener">Telegram</a><a href="https://t.me/nOSAnnouncements" target="_blank" rel="noreferrer noopener">Telegram Announcements</a><a href="https://twitter.com/nOSplatform" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.reddit.com/r/nOSplatform" target="_blank" rel="noreferrer noopener">Reddit</a></div><div><h5>More</h5><a href="https://medium.com/nos-io" target="_blank">Blog</a><a href="https://github.com/nos">GitHub</a><a class="github-button" href="https://github.com/nos/client" data-icon="octicon-star" data-count-href="/nos/client/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star nOS</a></div></section><section class="copyright">Copyright © 2019 nOS</section></footer></div></body></html>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/nos-client/getting-started.html"><span class="arrow-prev">← </span><span>Getting started</span></a><a class="docs-next button" href="/docs/nos-client/implementation-example.html"><span>Implementation example</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#import-and-usage-of-the-nos-api">Import and usage of the nOS API</a></li><li><a href="#vanilla-javascript">Vanilla Javascript</a></li><li><a href="#installation-and-usage-of-api-functions">Installation and usage of API-Functions</a></li><li><a href="#events">Events</a><ul class="toc-headings"><li><a href="#block"><code>block</code></a></li></ul></li><li><a href="#functions">Functions</a><ul class="toc-headings"><li><a href="#getaddress"><code>getAddress</code></a></li></ul></li><li><a href="#getbalance"><code>getBalance</code></a><ul class="toc-headings"><li><a href="#getlastblock"><code>getLastBlock</code></a></li><li><a href="#claimgas"><code>claimGas</code></a></li></ul></li><li><a href="#testinvoke"><code>testInvoke</code></a></li><li><a href="#invoke"><code>invoke</code></a></li><li><a href="#getstorage"><code>getStorage</code></a></li><li><a href="#send"><code>send</code></a></li><li><a href="#getpublickey"><code>getPublicKey</code></a></li><li><a href="#encrypt"><code>encrypt</code></a></li><li><a href="#decrypt"><code>decrypt</code></a></li><li><a href="#constants">Constants</a><ul class="toc-headings"><li><a href="#assets"><code>ASSETS</code></a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/en/intro.html" class="nav-home"><img src="/img/logo.svg" alt="nOS Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/nos-client/getting-started.html">nOS Client documentation</a><a href="/docs/create-nos-dapp/installation-usage.html">Create nOS dApp documentation</a><a href="/docs/nos-local/installation-usage.html">nOS Local documentation</a></div><div><h5>Community</h5><a href="https://discordapp.com/invite/eGFAskm">Discord Chat</a><a href="https://t.me/nOSplatform" target="_blank" rel="noreferrer noopener">Telegram</a><a href="https://t.me/nOSAnnouncements" target="_blank" rel="noreferrer noopener">Telegram Announcements</a><a href="https://twitter.com/nOSplatform" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.reddit.com/r/nOSplatform" target="_blank" rel="noreferrer noopener">Reddit</a></div><div><h5>More</h5><a href="https://medium.com/nos-io" target="_blank">Blog</a><a href="https://github.com/nos">GitHub</a><a class="github-button" href="https://github.com/nos/client" data-icon="octicon-star" data-count-href="/nos/client/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star nOS</a></div></section><section class="copyright">Copyright © 2019 nOS</section></footer></div></body></html>
