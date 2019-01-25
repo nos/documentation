@@ -1,3 +1,9 @@
+---
+id: getting-started
+title: Getting started
+sidebar_label: Getting started
+---
+
 # nOS ID
 **OAuth 2 Authentication & API for nOS.app**
 
