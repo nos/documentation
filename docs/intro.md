@@ -9,6 +9,7 @@ Join the developers' community on [Discord](https://discord.nos.io).
 ##### Documentation
 - [nOS Client](./nos-client/getting-started.html)
 - [Create nOS dApp](./create-nos-dapp/installation-usage.html)
+- [nOS ID](./nos-id/getting-started.html)
 - [nOS Local](./nos-local/installation-usage.html)
 
 ##### Articles
