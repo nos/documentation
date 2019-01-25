@@ -53,7 +53,6 @@
 <li>Email</li>
 <li>Username</li>
 <li>Verified user cryptocurrency addresses</li>
-<li>NOS Balance</li>
 <li>NOS Holding Score</li>
 </ul>
 <p>More features for reading (and writing) user data will be available in the future.</p>
@@ -177,8 +176,6 @@ You should store the Access Token in your database, and use a separate session t
     $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
     $content .= <span class="hljs-string">"&lt;strong&gt;Verified NEO Address:&lt;/strong&gt; $neo_address"</span>;
     $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
-    $content .= <span class="hljs-string">"&lt;strong&gt;NOS Balance:&lt;/strong&gt; "</span> . $response-&gt;balance_nos;
-    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
     $content .= <span class="hljs-string">"&lt;strong&gt;Holding Score:&lt;/strong&gt; "</span> . $response-&gt;holding_score;
     $content .= <span class="hljs-string">"&lt;/div&gt;"</span>;
 }
@@ -272,8 +269,6 @@ $client_secret = <span class="hljs-string">"ee5c3a7ad672c41981b8ca66ab439fa2cf42
     $content .= <span class="hljs-string">"&lt;strong&gt;Email:&lt;/strong&gt; $response-&gt;email"</span>;
     $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
     $content .= <span class="hljs-string">"&lt;strong&gt;Verified NEO Address:&lt;/strong&gt; $neo_address"</span>;
-    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
-    $content .= <span class="hljs-string">"&lt;strong&gt;NOS Balance:&lt;/strong&gt; "</span> . $response-&gt;balance_nos;
     $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
     $content .= <span class="hljs-string">"&lt;strong&gt;Holding Score:&lt;/strong&gt; "</span> . $response-&gt;holding_score;
     $content .= <span class="hljs-string">"&lt;/div&gt;"</span>;
