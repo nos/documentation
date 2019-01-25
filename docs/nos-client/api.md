@@ -170,7 +170,7 @@ nos
 
 &nbsp;
 
-## `getBalance`
+### `getBalance`
 
 ---
 
@@ -266,7 +266,7 @@ nos
 
 &nbsp;
 
-## `testInvoke`
+### `testInvoke`
 
 ---
 
@@ -305,7 +305,7 @@ nos
 
 &nbsp;
 
-## `invoke`
+### `invoke`
 
 ---
 
@@ -357,7 +357,7 @@ nos
 
 &nbsp;
 
-## `getStorage`
+### `getStorage`
 
 ---
 
@@ -394,7 +394,7 @@ nos
 
 &nbsp;
 
-## `send`
+### `send`
 
 ---
 
@@ -430,7 +430,7 @@ nos
 
 &nbsp;
 
-## `getPublicKey`
+### `getPublicKey`
 
 ---
 
@@ -457,7 +457,7 @@ nos
 
 &nbsp;
 
-## `encrypt`
+### `encrypt`
 
 ---
 
@@ -491,7 +491,7 @@ nos
 
 &nbsp;
 
-## `decrypt`
+### `decrypt`
 
 ---
 
