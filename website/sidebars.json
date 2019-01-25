@@ -11,6 +11,9 @@
     "Create nOS dApp": [
       "create-nos-dapp/installation-usage"
     ],
+    "nOS ID" : [
+      "nos-id/getting-started"
+    ],
     "nOS Local": [
       "nos-local/installation-usage"
     ]
