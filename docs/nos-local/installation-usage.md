@@ -69,7 +69,7 @@ Wait a 🔥 minute and the nOS name service contract is deployed!
 
 ### Register a domain with nOS
 ---
-Let's register an example domain name with nOS
+Let's register an example domain name with nOS.
 This is only possible using the private local net - not with the nOS Testnet
 
 ```
