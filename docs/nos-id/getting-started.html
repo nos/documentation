@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>nos-id/getting-started · nOS Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;nos-id&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#nos-id&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nOS ID&lt;/h1&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="nos-id/getting-started · nOS Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.nos.io/index.html"/><meta property="og:description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;nos-id&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#nos-id&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nOS ID&lt;/h1&gt;
+"/><meta property="og:image" content="https://docs.nos.io/img/logo.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.nos.io/img/logo.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.svg" alt="nOS Documentation"/><h2 class="headerTitleWithLogo">nOS Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/intro.html" target="_self">Documentation</a></li><li class=""><a href="https://medium.com/nos-io" target="_self">Blog</a></li><li class=""><a href="/help.html" target="_self">Help</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">nos-id/getting-started</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="nos-id"></a><a href="#nos-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>nOS ID</h1>
+<p><strong>OAuth 2 Authentication &amp; API for nOS.app</strong></p>
+<h1><a class="anchor" aria-hidden="true" id="table-of-contents"></a><a href="#table-of-contents" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Table of Contents</h1>
+<ul>
+<li><a href="#nos-id">nOS ID</a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#summary">Summary</a>
+<ul>
+<li><a href="#benefits">Benefits</a></li>
+<li><a href="#available-user-data">Available User Data</a></li>
+<li><a href="#authentication-flow">Authentication Flow</a></li>
+</ul></li>
+<li><a href="#tutorial">Tutorial</a>
+<ul>
+<li><a href="#1-register-your-app">1. Register your App</a></li>
+<li><a href="#2-retrieve-app-details">2. Retrieve App Details</a></li>
+<li><a href="#3-generate-a-random-state-token">3. Generate a random state token</a>
+<ul>
+<li><a href="#php-example">PHP Example</a></li>
+</ul></li>
+<li><a href="#4-handle-the-authorization">4. Handle the Authorization</a>
+<ul>
+<li><a href="#flow">Flow</a></li>
+<li><a href="#php-example-1">PHP Example</a></li>
+</ul></li>
+<li><a href="#5-using-the-access-token-to-read-user-data">5. Using the Access Token to Read User Data</a>
+<ul>
+<li><a href="#php-example-2">PHP Example</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#full-php-example">Full PHP Example</a></li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="summary"></a><a href="#summary" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Summary</h1>
+<p>nOS ID is a simple to use identity system that can be integrated with apps to gain the following features:</p>
+<ul>
+<li>Let users log in to your app with a single click (similar to &quot;Login with Facebook&quot;), using their nOS.app account.</li>
+<li>Retrieve user data and their verified cryptocurrency addresses.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="benefits"></a><a href="#benefits" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Benefits</h2>
+<ul>
+<li>Build secure <strong>server-side applications that integrate with your own crypto-currency token</strong> (or smart contract).</li>
+<li>Use your <strong>favorite language &amp; framework</strong>.</li>
+<li><strong>One-click registration</strong> and login for server-side nOS applications.</li>
+<li>Offer benefits (app features, game xp, points) to users based on their token balance without a <em>hosted wallet</em> (hosted wallets are insecure and add loads of liability to the app).</li>
+<li>Increased security and conversion rates for crypto payments and transactions.</li>
+<li>Integrate with nOS Client to let users make <strong>one-click payments</strong> (and any other type of transaction) directly in your application, without ever needing their private keys or a deposit address.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="available-user-data"></a><a href="#available-user-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Available User Data</h2>
+<p>This is the data you can read from authorized users:</p>
+<ul>
+<li>Email</li>
+<li>Username</li>
+<li>Verified user cryptocurrency addresses</li>
+<li>NOS Balance</li>
+<li>NOS Holding Score</li>
+</ul>
+<p>More features for reading (and writing) user data will be available in the future.</p>
+<h2><a class="anchor" aria-hidden="true" id="authentication-flow"></a><a href="#authentication-flow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Authentication Flow</h2>
+<p>The authentication flow follows the OAuth 2 standard with the <em>code</em> response type.</p>
+<ol>
+<li>Register an App.</li>
+<li>Generate an Authorization URL for the user.</li>
+<li>On authorization, send returned <code>code</code> variable to nOS.app OAuth 2 API together with your Client ID and Secret.</li>
+<li>Retrieve Access Token.</li>
+<li>Send HTTP requests to nOS.app API using Access Token to read/write user data of the user that the Access Code belongs to.</li>
+</ol>
+<p><strong>Learn more about OAuth 2:</strong> <a href="https://www.oauth.com/oauth2-servers/accessing-data/">https://www.oauth.com/oauth2-servers/accessing-data/</a></p>
+<h1><a class="anchor" aria-hidden="true" id="tutorial"></a><a href="#tutorial" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tutorial</h1>
+<h2><a class="anchor" aria-hidden="true" id="1-register-your-app"></a><a href="#1-register-your-app" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Register your App</h2>
+<p>First you'll need to register your nOS ID App at <a href="nos.app/oauth/index">nos.app/oauth/index</a>.</p>
+<p><img src="https://i.imgur.com/t8scg2a.png" alt="Create nOS ID App Image"></p>
+<ol>
+<li>Website URL is the Home Page of your application.</li>
+<li><em>Redirect URI</em> is the URI that nOS.app redirects the user to after approving your application. The Redirect URI will have a <code>code</code> and <code>state</code> variable, which you will use to retrieve an <em>Access Token</em>.</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="2-retrieve-app-details"></a><a href="#2-retrieve-app-details" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Retrieve App Details</h2>
+<p><img src="https://i.imgur.com/apVpCUm.png" alt="Client ID Page">
+You'll need the <strong>Client ID</strong>, <strong>Client Secret</strong>, and <strong>Authorization URL</strong>.</p>
+<ul>
+<li>The Client ID and Secret are used to authenticate the Application when it makes API requests to nOS.app.</li>
+<li>The Authorization URL is where you send users to to Authorize your Application.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="3-generate-a-random-state-token"></a><a href="#3-generate-a-random-state-token" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Generate a random state token</h2>
+<p>The Authorization URL supplied by nOS.app ends with <code>?state=example</code>. Replace <code>example</code> with a randomly generated token that you store in the user's browser (e.g. with a cookie or session key).</p>
+<p>When the user authorizes the application, nOS.app adds the <code>state</code> variable in the Redirect URI. You can use this to check if the same user has authorized the application in the same browser session.</p>
+<h3><a class="anchor" aria-hidden="true" id="php-example"></a><a href="#php-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP Example</h3>
+<p>This is a functional PHP example. Make sure to replace the common variables with your own app variables (Client ID, Secret).</p>
+<pre><code class="hljs css language-php">$redirect_uri = <span class="hljs-string">"http://localhost/nos-id-demo-app"</span>;
+$client_id = <span class="hljs-string">"2c19ca0452af457f17fdc638wu67f5a9"</span>;
+<span class="hljs-comment">// NEVER share your client secret. This is like the password of your application.</span>
+$client_secret = <span class="hljs-string">"ee5c3a7ad672c41981b8ca66ab439fa2cf4253347fa827533a01483638bdb690"</span>;
+$state = bin2hex(random_bytes(<span class="hljs-number">4</span>));
+$_SESSION[<span class="hljs-string">'state'</span>] = $state;
+
+<span class="hljs-comment">/*
+* Create the nOS ID Authorization URL using the variables above. You can find the generated URL in your nOS ID App page.
+* We replaced the state value "example" with our randomly generated $state.
+*/</span>
+$url = <span class="hljs-string">"http://nos.app/oauth/authorize?client_id="</span> . $client_id . <span class="hljs-string">"&amp;redirect_uri="</span> . $redirect_uri . <span class="hljs-string">"&amp;state="</span> . $state;
+</code></pre>
+<p>Redirect the user to the <code>$url</code> with a button or redirect.
+The user will be redirected to nOS.app and see the following dialog:</p>
+<p><img src="https://i.imgur.com/5QoPSWu.png" alt="App Authorization"></p>
+<h2><a class="anchor" aria-hidden="true" id="4-handle-the-authorization"></a><a href="#4-handle-the-authorization" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Handle the Authorization</h2>
+<p>Upon clicking <strong>Approve</strong>, the user is redirected to your <em>Redirect URI</em>.
+The <em>Redirect URI</em> will have 2 variables: <code>code</code> and <code>state</code>.</p>
+<h3><a class="anchor" aria-hidden="true" id="flow"></a><a href="#flow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flow</h3>
+<ol>
+<li>Compare the <code>state</code> value with the <code>state</code> you stored in the user's browser session in  <strong>Step 3</strong> to verify the user session.</li>
+<li>If the <code>state</code> matches, make a POST request to nos.app to retrieve the user's <strong>Access Token</strong>.</li>
+<li>Store the <strong>Access Token</strong> to your database.</li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="php-example-1"></a><a href="#php-example-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP Example</h3>
+<pre><code class="hljs css language-php"><span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>($_GET[<span class="hljs-string">'code'</span>]) &amp;&amp; !<span class="hljs-keyword">empty</span>($_SESSION[<span class="hljs-string">'state'</span>]) &amp;&amp; $_SESSION[<span class="hljs-string">'state'</span>] === $_GET[<span class="hljs-string">'state'</span>]) {
+    <span class="hljs-comment">// Set post fields</span>
+    $post = [
+        <span class="hljs-string">'code'</span> =&gt; $_GET[<span class="hljs-string">'code'</span>],
+        <span class="hljs-string">'grant_type'</span> =&gt; <span class="hljs-string">'authorization_code'</span>,
+        <span class="hljs-string">'redirect_uri'</span> =&gt; $redirect_uri,
+        <span class="hljs-string">'client_id'</span> =&gt; $client_id,
+        <span class="hljs-string">'client_secret'</span> =&gt; $client_secret
+    ];
+
+    $ch = curl_init(<span class="hljs-string">'http://nos.app/oauth/token'</span>);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, <span class="hljs-keyword">true</span>);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+
+    $response = curl_exec($ch);
+
+    curl_close($ch);
+
+    $response = json_decode($response);
+
+    <span class="hljs-comment">/*
+     * Store the access token in the user's browser session to authorize the user and make API requests.
+     * IMPORTANT: In production, you want to store the access token in a database and use a separate session token (stored as a cookie) to authorize the user.
+     * If you're building an app with existing account management, you could store the access token in a separate column for the logged in user. As long as the access token can be retrieved for a logged in user later.
+     * Read the OAuth 2 docs for best practices: https://www.oauth.com/oauth2-servers/accessing-data/
+     */</span>
+    $_SESSION[<span class="hljs-string">'access_token'</span>] = $response-&gt;access_token;
+
+    <span class="hljs-comment">// Refresh or redirect the page.</span>
+    header(<span class="hljs-string">"Location: http://localhost/nos-id-demo-app"</span>);
+} <span class="hljs-keyword">elseif</span> (!<span class="hljs-keyword">empty</span>($_SESSION[<span class="hljs-string">'state'</span>]) &amp;&amp; !<span class="hljs-keyword">empty</span>($_GET[<span class="hljs-string">'state'</span>]) &amp;&amp; $_SESSION[<span class="hljs-string">'state'</span>] !== $_GET[<span class="hljs-string">'state'</span>]) {
+    <span class="hljs-comment">// If state is set in the URL but doesn't match state previously set in user session: something went wrong. Refresh the page.</span>
+    header(<span class="hljs-string">"Location: http://localhost/nos-id-demo-app"</span>);
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="5-using-the-access-token-to-read-user-data"></a><a href="#5-using-the-access-token-to-read-user-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Using the Access Token to Read User Data</h2>
+<p>You can use the <strong>Access Token</strong> token to register the user to your app, log them in, connect user data to an existing account on your app, and <strong>build features around your users' cryptocurrency accounts</strong>.
+For example you can check if a user holds a specific amount of your token on one of their verified cryptocurrency addresses (retrieved by nOS.app API), and unlock a feature in an app, or grant bonus points/give starting XP in a game, etc.</p>
+<ul>
+<li>If you want to <strong>register</strong> the user, you should retrieve the user's <em>Account Details</em> using the nOS.app API and store it in your database together with the Access Token.</li>
+<li>If you want to log in the user, you can check if the Access Token belongs to an existing user in your database.</li>
+</ul>
+<p>In this tutorial we're saving the Access Token to the user's browser session. This is <strong>not</strong> recommended in production.
+You should store the Access Token in your database, and use a separate session token to keep the user logged in.</p>
+<h3><a class="anchor" aria-hidden="true" id="php-example-2"></a><a href="#php-example-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PHP Example</h3>
+<pre><code class="hljs css language-php"><span class="hljs-comment">/**
+ * The code below is used to display the nOS.app user account data for an authorized user.
+ */</span>
+<span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>($_SESSION[<span class="hljs-string">'access_token'</span>])) {
+    $access_token = $_SESSION[<span class="hljs-string">'access_token'</span>];
+
+    <span class="hljs-comment">//Create URL for making an API request to nos.app to retrieve user data, using our App credentials the user's access token.</span>
+    $response = file_get_contents(<span class="hljs-string">"https://nos.app/api/v1/user/info?access_token=$access_token"</span>);
+    $response = json_decode($response);
+
+    <span class="hljs-comment">// Process the user data. You can read basic account data + the user's connected crypto addresses.</span>
+    $neo_address = $response-&gt;address-&gt;neo;
+    $content = <span class="hljs-string">"&lt;div class='text-content'&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;Username:&lt;/strong&gt; $response-&gt;username"</span>;
+    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;Email:&lt;/strong&gt; $response-&gt;email"</span>;
+    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;Verified NEO Address:&lt;/strong&gt; $neo_address"</span>;
+    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;NOS Balance:&lt;/strong&gt; "</span> . $response-&gt;balance_nos;
+    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;Holding Score:&lt;/strong&gt; "</span> . $response-&gt;holding_score;
+    $content .= <span class="hljs-string">"&lt;/div&gt;"</span>;
+}
+</code></pre>
+<h1><a class="anchor" aria-hidden="true" id="full-php-example"></a><a href="#full-php-example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Full PHP Example</h1>
+<pre><code class="hljs css language-html"><span class="php"><span class="hljs-meta">&lt;?php</span>
+session_start();
+
+<span class="hljs-comment">/**
+ * Common variables.
+ */</span>
+$redirect_uri = <span class="hljs-string">"http://localhost/nos-id-demo-app"</span>;
+$client_id = <span class="hljs-string">"2c19ca0452af457f17fdc6312b57f5a9"</span>;
+
+<span class="hljs-comment">// NEVER share your client secret. This is like the password of your application.</span>
+$client_secret = <span class="hljs-string">"ee5c3a7ad672c41981b8ca66ab439fa2cf4253347f7566533a01483638bdb690"</span>;
+
+<span class="hljs-comment">/**
+ * The code below is used if the user is not yet authorized.
+ */</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>($_GET[<span class="hljs-string">'code'</span>]) &amp;&amp; <span class="hljs-keyword">empty</span>($_SESSION[<span class="hljs-string">'access_token'</span>])) {
+    <span class="hljs-comment">//  Generate a random "state" variable to verify the user's session</span>
+    $state = bin2hex(random_bytes(<span class="hljs-number">4</span>));
+    $_SESSION[<span class="hljs-string">'state'</span>] = $state;
+
+    <span class="hljs-comment">/*
+     * Create the nOS ID Authorization URL. You can find the generated URL in your nOS ID App page.
+     * We replaced the state value "example" with our randomly generated $state.
+     */</span>
+    $url = <span class="hljs-string">"https://nos.app/oauth/authorize?client_id=$client_id&amp;redirect_uri=$redirect_uri&amp;state=$state"</span>;
+
+    <span class="hljs-comment">// $content is what we render in the body.</span>
+    $content = <span class="hljs-string">"&lt;a class='button' href='$url'&gt;Login with nOS.app&lt;/a&gt;"</span>;
+}
+
+<span class="hljs-comment">/**
+ * The code below is used if the user authorized the authorization prompt.
+ */</span>
+<span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>($_GET[<span class="hljs-string">'code'</span>]) &amp;&amp; !<span class="hljs-keyword">empty</span>($_SESSION[<span class="hljs-string">'state'</span>]) &amp;&amp; $_SESSION[<span class="hljs-string">'state'</span>] === $_GET[<span class="hljs-string">'state'</span>]) {
+    <span class="hljs-comment">// Set post fields</span>
+    $post = [
+        <span class="hljs-string">'code'</span> =&gt; $_GET[<span class="hljs-string">'code'</span>],
+        <span class="hljs-string">'grant_type'</span> =&gt; <span class="hljs-string">'authorization_code'</span>,
+        <span class="hljs-string">'redirect_uri'</span> =&gt; $redirect_uri,
+        <span class="hljs-string">'client_id'</span> =&gt; $client_id,
+        <span class="hljs-string">'client_secret'</span> =&gt; $client_secret
+    ];
+
+    $ch = curl_init(<span class="hljs-string">'https://nos.app/oauth/token'</span>);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, <span class="hljs-keyword">true</span>);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+
+    $response = curl_exec($ch);
+
+    curl_close($ch);
+
+    $response = json_decode($response);
+
+    <span class="hljs-comment">/*
+     * Store the access token in the user's browser session to authorize the user and make API requests.
+     * IMPORTANT: In production, you want to store the access token in a database and use a separate session token (stored as a cookie) to authorize the user.
+     * If you're building an app with existing account management, you could store the access token in a separate column for the logged in user. As long as the access token can be retrieved for a logged in user later.
+     * Read the OAuth 2 docs for best practices: https://www.oauth.com/oauth2-servers/accessing-data/
+     */</span>
+    $_SESSION[<span class="hljs-string">'access_token'</span>] = $response-&gt;access_token;
+
+    <span class="hljs-comment">// Refresh or redirect the page.</span>
+    header(<span class="hljs-string">"Location: http://localhost/nos-id-demo-app"</span>);
+} <span class="hljs-keyword">elseif</span> (!<span class="hljs-keyword">empty</span>($_SESSION[<span class="hljs-string">'state'</span>]) &amp;&amp; !<span class="hljs-keyword">empty</span>($_GET[<span class="hljs-string">'state'</span>]) &amp;&amp; $_SESSION[<span class="hljs-string">'state'</span>] !== $_GET[<span class="hljs-string">'state'</span>]) {
+    <span class="hljs-comment">// If state is set in the URL but doesn't match user session: something went wrong. Refresh the page.</span>
+    header(<span class="hljs-string">"Location: http://localhost/nos-id-demo-app"</span>);
+}
+
+
+
+<span class="hljs-comment">/**
+ * The code below is used to display the nOS.app user account data for an authorized user.
+ */</span>
+<span class="hljs-keyword">if</span> (!<span class="hljs-keyword">empty</span>($_SESSION[<span class="hljs-string">'access_token'</span>])) {
+    $access_token = $_SESSION[<span class="hljs-string">'access_token'</span>];
+
+    <span class="hljs-comment">//Create URL for making an API request to nos.app to retrieve user data, using our App credentials (client_id and client_secret) and the user's access token.</span>
+    $response = file_get_contents(<span class="hljs-string">"https://nos.app/api/v1/user/info?access_token=$access_token"</span>);
+    $response = json_decode($response);
+
+    <span class="hljs-comment">// Process the user data. You can read basic account data + the user's connected crypto addresses.</span>
+    $neo_address = $response-&gt;address-&gt;neo;
+    $content = <span class="hljs-string">"&lt;div class='text-content'&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;Username:&lt;/strong&gt; $response-&gt;username"</span>;
+    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;Email:&lt;/strong&gt; $response-&gt;email"</span>;
+    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;Verified NEO Address:&lt;/strong&gt; $neo_address"</span>;
+    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;NOS Balance:&lt;/strong&gt; "</span> . $response-&gt;balance_nos;
+    $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
+    $content .= <span class="hljs-string">"&lt;strong&gt;Holding Score:&lt;/strong&gt; "</span> . $response-&gt;holding_score;
+    $content .= <span class="hljs-string">"&lt;/div&gt;"</span>;
+}
+
+
+<span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>nOS ID Demo App<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-tag">body</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fcfcfc</span>;
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">flex-direction</span>: row;
+            <span class="hljs-attribute">text-align</span>: center;
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+            <span class="hljs-attribute">align-items</span>: center;
+            <span class="hljs-attribute">font-family</span>: sans-serif;
+        }
+
+        <span class="hljs-selector-class">.center-div</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+            <span class="hljs-attribute">display</span>: flex;
+            <span class="hljs-attribute">flex-direction</span>: column;
+            <span class="hljs-attribute">align-items</span>: center;
+            <span class="hljs-attribute">align-content</span>: center;
+            <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+        }
+
+        <span class="hljs-selector-class">.button</span> {
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#23a1fb</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span>;
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-number">#f1f1f1</span>;
+            <span class="hljs-attribute">text-decoration</span>: none;
+        }
+
+        <span class="hljs-selector-class">.text-content</span> {
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;
+            <span class="hljs-attribute">text-align</span>: left;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"center-div"</span>&gt;</span>
+    <span class="php"><span class="hljs-meta">&lt;?</span>= $content <span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#benefits">Benefits</a></li><li><a href="#available-user-data">Available User Data</a></li><li><a href="#authentication-flow">Authentication Flow</a></li><li><a href="#1-register-your-app">1. Register your App</a></li><li><a href="#2-retrieve-app-details">2. Retrieve App Details</a></li><li><a href="#3-generate-a-random-state-token">3. Generate a random state token</a><ul class="toc-headings"><li><a href="#php-example">PHP Example</a></li></ul></li><li><a href="#4-handle-the-authorization">4. Handle the Authorization</a><ul class="toc-headings"><li><a href="#flow">Flow</a></li><li><a href="#php-example-1">PHP Example</a></li></ul></li><li><a href="#5-using-the-access-token-to-read-user-data">5. Using the Access Token to Read User Data</a><ul class="toc-headings"><li><a href="#php-example-2">PHP Example</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/en/intro.html" class="nav-home"><img src="/img/logo.svg" alt="nOS Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/nos-client/getting-started.html">nOS Client documentation</a><a href="/docs/create-nos-dapp/installation-usage.html">Create nOS dApp documentation</a><a href="/docs/nos-local/installation-usage.html">nOS Local documentation</a></div><div><h5>Community</h5><a href="https://discordapp.com/invite/eGFAskm">Discord Chat</a><a href="https://t.me/nOSplatform" target="_blank" rel="noreferrer noopener">Telegram</a><a href="https://t.me/nOSAnnouncements" target="_blank" rel="noreferrer noopener">Telegram Announcements</a><a href="https://twitter.com/nOSplatform" target="_blank" rel="noreferrer noopener">Twitter</a><a href="https://www.reddit.com/r/nOSplatform" target="_blank" rel="noreferrer noopener">Reddit</a></div><div><h5>More</h5><a href="https://medium.com/nos-io" target="_blank">Blog</a><a href="https://github.com/nos">GitHub</a><a class="github-button" href="https://github.com/nos/client" data-icon="octicon-star" data-count-href="/nos/client/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star nOS</a></div></section><section class="copyright">Copyright © 2019 nOS</section></footer></div></body></html>
