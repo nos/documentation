@@ -38,7 +38,6 @@ This is the data you can read from authorized users:
 * Email
 * Username
 * Verified user cryptocurrency addresses
-* NOS Balance
 * NOS Holding Score
 
 More features for reading (and writing) user data will be available in the future.
@@ -177,8 +176,6 @@ if (!empty($_SESSION['access_token'])) {
     $content .= "<br>";
     $content .= "<strong>Verified NEO Address:</strong> $neo_address";
     $content .= "<br>";
-    $content .= "<strong>NOS Balance:</strong> " . $response->balance_nos;
-    $content .= "<br>";
     $content .= "<strong>Holding Score:</strong> " . $response->holding_score;
     $content .= "</div>";
 }
@@ -274,8 +271,6 @@ if (!empty($_SESSION['access_token'])) {
     $content .= "<strong>Email:</strong> $response->email";
     $content .= "<br>";
     $content .= "<strong>Verified NEO Address:</strong> $neo_address";
-    $content .= "<br>";
-    $content .= "<strong>NOS Balance:</strong> " . $response->balance_nos;
     $content .= "<br>";
     $content .= "<strong>Holding Score:</strong> " . $response->holding_score;
     $content .= "</div>";
