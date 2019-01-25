@@ -107,7 +107,6 @@ nos.off('block', subscription); // unsubscribe (optional)
 const subscription = nos.once('someEvent', () => {
   /* callback */
 });
-nos.off('block', subscription); // unsubscribe (optional)
 ```
 
 &nbsp;
@@ -217,6 +216,10 @@ nos
 
 The `getLastBlock` function provides the last known block that was fetched by the client. It does
 not require the user to grant permission.
+
+#### Parameters
+
+None.
 
 #### Returns
 
