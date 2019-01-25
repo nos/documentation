@@ -53,7 +53,7 @@ More features for reading (and writing) user data will be available in the futur
 The authentication flow follows the OAuth 2 standard with the *code* response type.
 1. Register an App.
 2. Generate an Authorization URL for the user.
-3. On authorization, send returned `code` variable to nOS.app OAuth 2 API together with your Client ID and Secret.
+3. On authorization, send the returned `code` variable to nOS.app OAuth 2 API together with your Client ID and Secret.
 4. Retrieve Access Token.
 5. Send HTTP requests to nOS.app API using Access Token to read/write user data of the user that the Access Code belongs to.
 
@@ -174,7 +174,7 @@ if (!empty($_SESSION['access_token'])) {
     $response = json_decode($response);
 
     // Process the user data. You can read basic account data + the user's connected crypto addresses.
-    $neo_address = $response->address->neo;
+    $neo_address = $response->address->neo[0];
     $content = "<div class='text-content'>";
     $content .= "<strong>Username:</strong> $response->username";
     $content .= "<br>";
@@ -270,7 +270,7 @@ if (!empty($_SESSION['access_token'])) {
     $response = json_decode($response);
 
     // Process the user data. You can read basic account data + the user's connected crypto addresses.
-    $neo_address = $response->address->neo;
+    $neo_address = $response->address->neo[0];
     $content = "<div class='text-content'>";
     $content .= "<strong>Username:</strong> $response->username";
     $content .= "<br>";
