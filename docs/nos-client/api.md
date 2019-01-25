@@ -107,7 +107,6 @@ nos.off('block', subscription); // unsubscribe (optional)
 const subscription = nos.once('someEvent', () => {
   /* callback */
 });
-nos.off('block', subscription); // unsubscribe (optional)
 ```
 
 &nbsp;
@@ -177,6 +176,10 @@ nos
 
 The `getBalance` function provides the balance of a certain address for a
 specified asset or NEP5 token. It does not require the user to grant permission.
+
+#### Parameters
+
+None.
 
 #### Parameters
 
