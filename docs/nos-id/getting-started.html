@@ -111,7 +111,7 @@
 <ol>
 <li>Register an App.</li>
 <li>Generate an Authorization URL for the user.</li>
-<li>On authorization, send returned <code>code</code> variable to nOS.app OAuth 2 API together with your Client ID and Secret.</li>
+<li>On authorization, send the returned <code>code</code> variable to nOS.app OAuth 2 API together with your Client ID and Secret.</li>
 <li>Retrieve Access Token.</li>
 <li>Send HTTP requests to nOS.app API using Access Token to read/write user data of the user that the Access Code belongs to.</li>
 </ol>
@@ -218,7 +218,7 @@ You should store the Access Token in your database, and use a separate session t
     $response = json_decode($response);
 
     <span class="hljs-comment">// Process the user data. You can read basic account data + the user's connected crypto addresses.</span>
-    $neo_address = $response-&gt;address-&gt;neo;
+    $neo_address = $response-&gt;address-&gt;neo[<span class="hljs-number">0</span>];
     $content = <span class="hljs-string">"&lt;div class='text-content'&gt;"</span>;
     $content .= <span class="hljs-string">"&lt;strong&gt;Username:&lt;/strong&gt; $response-&gt;username"</span>;
     $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
@@ -312,7 +312,7 @@ $client_secret = <span class="hljs-string">"ee5c3a7ad672c41981b8ca66ab439fa2cf42
     $response = json_decode($response);
 
     <span class="hljs-comment">// Process the user data. You can read basic account data + the user's connected crypto addresses.</span>
-    $neo_address = $response-&gt;address-&gt;neo;
+    $neo_address = $response-&gt;address-&gt;neo[<span class="hljs-number">0</span>];
     $content = <span class="hljs-string">"&lt;div class='text-content'&gt;"</span>;
     $content .= <span class="hljs-string">"&lt;strong&gt;Username:&lt;/strong&gt; $response-&gt;username"</span>;
     $content .= <span class="hljs-string">"&lt;br&gt;"</span>;
