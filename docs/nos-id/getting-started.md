@@ -95,7 +95,7 @@ $_SESSION['state'] = $state;
 * Create the nOS ID Authorization URL using the variables above. You can find the generated URL in your nOS ID App page.
 * We replaced the state value "example" with our randomly generated $state.
 */
-$url = "http://nos.app/oauth/authorize?client_id=" . $client_id . "&redirect_uri=" . $redirect_uri . "&state=" . $state;
+$url = "https://nos.app/oauth/authorize?client_id=" . $client_id . "&redirect_uri=" . $redirect_uri . "&state=" . $state;
 ```
 
 Redirect the user to the `$url` with a button or redirect.
@@ -124,7 +124,7 @@ if (!empty($_GET['code']) && !empty($_SESSION['state']) && $_SESSION['state'] ==
         'client_secret' => $client_secret
     ];
 
-    $ch = curl_init('http://nos.app/oauth/token');
+    $ch = curl_init('https://nos.app/oauth/token');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 
