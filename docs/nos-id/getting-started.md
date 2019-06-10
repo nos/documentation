@@ -61,7 +61,7 @@ The authentication flow follows the OAuth 2 standard with the *code* response ty
 
 # Tutorial
 ## 1. Register your App
-First you'll need to register your nOS ID App at [nos.app/oauth/index](nos.app/oauth/index).
+First you'll need to register your nOS ID App at [https://nos.app/oauth/index](nos.app/oauth/index).
 
 ![Create nOS ID App Image](https://i.imgur.com/t8scg2a.png)
 
