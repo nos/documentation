@@ -16,8 +16,8 @@ const users = [
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/docusaurus.svg',
     infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
+    pinned: true
+  }
 ];
 
 const siteConfig = {
@@ -38,10 +38,10 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'intro', label: 'Documentation'},
+    { doc: 'intro', label: 'Documentation' },
     // {blog: true, label: 'Blog'},
-    {href: "https://medium.com/nos-io", label: "Blog"},
-    {page: 'help', label: 'Help'}
+    { href: 'https://medium.com/nos-io', label: 'Blog' },
+    { page: 'help', label: 'Help' }
   ],
 
   // If you have users set above, you add it here:
@@ -54,8 +54,8 @@ const siteConfig = {
 
   /* colors for website */
   colors: {
-    primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    primaryColor: '#19191f',
+    secondaryColor: '#5364ea'
   },
 
   /* custom fonts for website */
@@ -71,14 +71,11 @@ const siteConfig = {
   },*/
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
-  copyright:
-    'Copyright © ' +
-    new Date().getFullYear() +
-    ' nOS',
+  copyright: 'Copyright © ' + new Date().getFullYear() + ' nOS',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'default',
+    theme: 'default'
   },
 
   // Add custom scripts here that would be placed in <script> tags
@@ -94,10 +91,10 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-   repoUrl: 'https://github.com/nos/client',
+  repoUrl: 'https://github.com/nos/client',
 
-   // Website URL
-   cname: 'docs.nos.io'
+  // Website URL
+  cname: 'docs.nos.io'
 };
 
 module.exports = siteConfig;
