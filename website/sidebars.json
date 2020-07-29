@@ -2,6 +2,7 @@
   "docs": {
     "Introduction": ["intro", "contributing"],
     "nOS Client": [
+      "nos-client/import-neo-wallet",
       "nos-client/getting-started",
       "nos-client/api",
       "nos-client/implementation-example",

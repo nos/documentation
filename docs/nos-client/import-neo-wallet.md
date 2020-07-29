@@ -1,4 +1,8 @@
-# How to import NEO wallets or accounts from nOS Client 0.5 or earlier
+---
+id: import-neo-wallet
+title: How to import NEO wallets or accounts from nOS 0.5 or earlier
+sidebar_label: Import NEO or nOS 0.5 Wallet
+---
 
 1. Create a new master wallet in the latest nOS Client.
 2. Click the 👜 Wallet icon.
