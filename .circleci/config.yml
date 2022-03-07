@@ -11,7 +11,7 @@ version: 2
 jobs:
   deploy-website:
     docker:
-      - image: circleci/node:10.17.0
+      - image: circleci/node:17.2.0
     steps:
       - checkout
       - run:
